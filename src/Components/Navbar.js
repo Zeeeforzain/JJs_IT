@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import Title from './Title';
 
 export default function Navbar() {
   const [scrolling, setScrolling] = useState(false);
@@ -20,13 +20,7 @@ export default function Navbar() {
 
   return (
     <div className={`navbar ${scrolling ? 'solid' : 'transparent'}`}>
-      <div className="title">
-        <img src="Images/logo.png" alt="logo" />
-        <div className="nm">
-          <Typography variant='h4'>Vizteck</Typography>
-          <Typography variant='h6'>SOLUTIONS</Typography>
-        </div>
-      </div>
+      <Title/>
       <div className="menu">
         <ul>
           <li>Home</li>
