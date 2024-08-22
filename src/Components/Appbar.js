@@ -21,7 +21,9 @@ const navItems = [
   "Services",
   "Portfolio",
   "Blog",
-  <Button key="book-demo" variant="contained" color="primary">
+  <Button variant="contained" color="primary" sx={{'&:hover':{
+    width:'130px', height:'7vh', transition:'1s',}}
+}>
     Book Demo
   </Button>,
 ];
@@ -29,34 +31,18 @@ const navItems = [
 function Appbar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [scrolled, setScrolled] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
-  const handleScroll = () => {
-    if (typeof window !== "undefined") {
-      setScrolled(window.scrollY > 100); // Adjust threshold as needed
-    }
-  };
-
-  React.useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }
-  }, []);
-
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center"}}>
       <Title sx={{ my: 2 }} />
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item.key || item} disablePadding>
+          <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary={item} />
             </ListItemButton>
@@ -72,14 +58,8 @@ function Appbar(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar
-        component="nav"
-        sx={{
-          backgroundColor: scrolled ? '#transparent' : '#fff', // White when scrolled, transparent otherwise
-          color: scrolled ? '#000' : '#fff', // Black text when scrolled, white otherwise
-          transition: 'background-color 0.3s ease', // Smooth transition
-          boxShadow: scrolled ? '0 2px 4px rgba(0, 0, 0, 0.1)' : 'none', // Optional shadow
-        }}
+      <AppBar component="nav"
+      sx={{backgroundColor:'white' , color:'Black'}}
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <IconButton
@@ -88,6 +68,7 @@ function Appbar(props) {
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
+            
           >
             <MenuIcon />
           </IconButton>
@@ -95,19 +76,12 @@ function Appbar(props) {
           <Title />
           <Box
             sx={{
-              display: { xs: "none", sm: "flex" },
+              display: { xs: "none", sm: "block" },
               width: "50%",
-              justifyContent: "space-between"
             }}
           >
             {navItems.map((item) => (
-              <Button
-                key={item.key || item}
-                sx={{
-                  color: scrolled ? '#000' : '#fff', // Black when scrolled, white otherwise
-                  mx: 2,
-                }}
-              >
+              <Button key={item} sx={{ color: "#000", mx:2, fontWeight:'700' }}>
                 {item}
               </Button>
             ))}
