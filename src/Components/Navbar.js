@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import Button from '@mui/material/Button';
 import Title from './Title';
+import  Box  from '@mui/material/Box';
 
 export default function Navbar() {
   const [scrolling, setScrolling] = useState(false);
@@ -19,9 +20,9 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`navbar ${scrolling ? 'solid' : 'transparent'}`}>
+    <Box className={`navbar ${scrolling ? 'solid' : 'transparent'}`}>
       <Title/>
-      <div className="menu">
+      <Box className="menu">
         <ul>
           <li>Home</li>
           <li>Services</li>
@@ -29,7 +30,7 @@ export default function Navbar() {
           <li>Blog</li>
           <Button size='large' variant='contained' color='primary'>Book Demo</Button>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
