@@ -5,7 +5,7 @@ export default function HeroSection() {
     <Box className='box'
     sx={{width:'60%',
         height:'80vh',
-        margin:'20px 20% 100px 100px',
+        margin:'20px 20% 0px 100px',
     }}
     >
       <Typography variant='h2'
