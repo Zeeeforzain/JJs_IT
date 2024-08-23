@@ -3,10 +3,10 @@ import React from 'react';
 
 export default function ServiceComponent(props) {
   return (
-    <Box width={'30%'} height={"50vh"} border={"1px solid black"}>
-      <img src="" alt="logo" />
-        <Typography>{props.title}</Typography>
-        <Typography>{props.description}</Typography>
+    <Box width={'30%'} height={"50vh"}>
+      <img src={props.img} alt="logo" />
+        <Typography variant="h6" sx={{color:'black', fontWeight:"600", marginTop:'20px'}} >{props.title}</Typography>
+        <Typography variant="subtitle1" sx={{color:'#616B7E'}}>{props.description}</Typography>
     </Box>
   );
 }
