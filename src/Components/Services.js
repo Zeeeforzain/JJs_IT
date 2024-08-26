@@ -1,18 +1,13 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import ServiceComponent from "./ServiceComponent";
+import Headings from "./Headings";
 export default function Services() {
   return (
     <Box margin={"80px 80px"}>
-      <Box width={"65%"} marginBottom={'50px'}>
-        <Typography variant="h4" sx={{ fontWeight: "700", color: "black" }}>
-          What Can We Do For You?
-        </Typography>
-        <Typography variant="subtitle1" sx={{ color: "#616B7E" }}>
-          A Web and Mobile application Development Company specializing in
-          Digital Automation for small and medium businesses.
-        </Typography>
-      </Box>
+      <Headings
+      titleVariant="h4" descVariant="h6" title="What Can We Do For You?" description="A Web and Mobile application Development Company specializing in
+          Digital Automation for small and medium businesses."/>
       <Box
         display={"flex"}
         justifyContent={"space-between"}

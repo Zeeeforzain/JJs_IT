@@ -22,7 +22,7 @@ const navItems = [
   "Portfolio",
   "Blog",
   <Button variant="contained" color="primary" sx={{'&:hover':{
-    width:'130px', height:'7vh', transition:'1s',}}
+    width:'130px', height:'7vh', transition:"0.5s ease-out",}}
 }>
     Book Demo
   </Button>,
