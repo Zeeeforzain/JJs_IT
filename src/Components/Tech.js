@@ -1,10 +1,20 @@
 import { Box ,Typography} from '@mui/material';
 import React from 'react';
-
+import ArrowRightRoundedIcon from '@mui/icons-material/ArrowRight';
 export default function Tech(props) {
   return (
-    <Box>
-      <Typography variant='h5'>{props.name}</Typography>
+    <Box 
+    marginBottom={'20px'} display={'flex'} justifyContent={'space-between'} alignItems={'center'}
+    sx={{'&:hover':{boxShadow: '1px 1px 5px 1px whitesmoke', backgroundColor:'white' , cursor:'pointer'}}}>
+      <Typography 
+      sx={{
+        width:'100%',
+        height:'8vh',
+        color:'black', 
+        padding:'10px'
+     }}
+      variant='h6'>{props.name}</Typography>
+      <ArrowRightRoundedIcon fontSize='large'/>
     </Box>
   );
 }

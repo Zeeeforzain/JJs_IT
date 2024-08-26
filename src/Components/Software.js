@@ -11,7 +11,7 @@ export default function Software(props) {
     alignItems={'center'}
     justifyContent={'center'}
     sx={{
-      '&:hover':{width:'22%', height:'15vh', transition:'0.5s ease-out'}
+      '&:hover':{width:'22%', height:'15vh',cursor:'pointer', transition:'0.5s ease-out'}
   }}
     >
       <img width={'250px'} height={'50vh'}

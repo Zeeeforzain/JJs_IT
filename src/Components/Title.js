@@ -5,10 +5,10 @@ import  Box  from '@mui/material/Box';
 export default function Title() {
   return (
       <Box className="title">
-        <img src="Images/logo.png" alt="logo" />
+        <img src="Images/jjsIt.png" alt="logo" width={'150px'} height={'200px'} />
         <Box className="nm">
-          <Typography variant='h4'>Vizteck</Typography>
-          <Typography variant='h6'>SOLUTIONS</Typography>
+          <Typography variant='h5'>JUNAID & JAWAD</Typography>
+          <Typography variant='h6'>CONSULTANCY</Typography>
         </Box>
       </Box>
   );

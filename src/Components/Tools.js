@@ -12,7 +12,7 @@ export default function Tools() {
         description="Assuring to provide exceptional customer experience and drive meaningful insights using the digital world's best app development practices and technology"
       />
       <Box display={"flex"} justifyContent={"space-between"} width={"80%"}>
-        <Box width={"45%"}>
+        <Box width={"40%"}>
           <Tech name="Mobile App Development" />
           <Tech name="Frontend Development" />
           <Tech name="Backend Development" />
