@@ -5,7 +5,7 @@ import  Box  from '@mui/material/Box';
 export default function Title() {
   return (
       <Box className="title">
-        <img src="Images/jjsIt.png" alt="logo" width={'150px'} height={'200px'} />
+        <img src="Images/jjs_it.svg" alt="logo" />
         <Box className="nm">
           <Typography variant='h5'>JUNAID & JAWAD</Typography>
           <Typography variant='h6'>CONSULTANCY</Typography>
