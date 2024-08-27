@@ -145,8 +145,8 @@ const Swiper = () => {
         onClick={handlePrev}
         sx={{
           position: "absolute",
-          top: "85%",
-          left: "120px",
+          top: {xs:'90%',md:"85%"},
+          left: {xs:'20px',md:"120px"},
           transform: "translateY(-50%)",
           color: "white",
           opacity: "0.7",
@@ -159,8 +159,8 @@ const Swiper = () => {
         onClick={handleNext}
         sx={{
           position: "absolute",
-          top: "85%",
-          right: "120px",
+          top: {xs:'90%',md:"85%"},
+          right: {xs:'20px',md:"120px"},
           transform: "translateY(-50%)",
           color: "white",
           opacity: "0.7",

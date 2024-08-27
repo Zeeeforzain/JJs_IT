@@ -7,7 +7,7 @@ export default function Software(props) {
     width={{xs:'100%', md:'30%'}}
     height={"20vh"}
     display={'flex'}
-    flexDirection={"column"}
+    flexDirection={'column'}
     alignItems={{xs:'center', md:'center'}}
     justifyContent={{xs:'center', md:'space-evenly'}}
     textAlign={{xs:"center",md:'center'}}

@@ -53,7 +53,7 @@ export default function Footer() {
           flexDirection={"column"}
           alignItems={"left"}
           justifyContent={"space-around"}
-          borderBottom={{xs:'1px solid white'}}
+          borderBottom={{xs:'1px solid white', md:'none'}}
         >
           <Title color="white" />
           <Typography
@@ -104,7 +104,7 @@ export default function Footer() {
           flexDirection={"column"}
           alignItems={"left"}
           justifyContent={"space-around"}
-          borderBottom={{xs:'1px solid white'}}
+          borderBottom={{xs:'1px solid white', md:'none'}}
         >
           <List sx={{ color: "white", fontWeight: "500" }}>
             <Typography variant="h5">Quick Links</Typography>

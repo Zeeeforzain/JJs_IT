@@ -29,7 +29,7 @@ export default function Tech({ name, isActive, onBoxClick }) {
           width: '100%',
           height: '8vh',
           padding: {xs:'5px', md:'10px'},
-          fontSize:{xs:'0.75rem', md:'1.75'}
+          fontSize:{xs:'0.75rem', md:'1.25rem'}
         }}
         variant='h6'
       >
