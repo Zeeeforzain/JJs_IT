@@ -5,7 +5,7 @@ export default function Tech(props) {
   return (
     <Box 
     marginBottom={'20px'} display={'flex'} justifyContent={'space-between'} alignItems={'center'}
-    sx={{'&:hover':{boxShadow: '1px 1px 5px 1px whitesmoke', backgroundColor:'white' , cursor:'pointer'}}}>
+    sx={{'&:hover':{boxShadow: '1px 1px 15px 5px whitesmoke', backgroundColor:'white' , cursor:'pointer'}}}>
       <Typography 
       sx={{
         width:'100%',

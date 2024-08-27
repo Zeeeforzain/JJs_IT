@@ -1,5 +1,6 @@
 import  {Box, Typography, Button} from '@mui/material';
 import React from 'react';
+import ArrowRightRoundedIcon from '@mui/icons-material/ArrowRightRounded'
 export default function HeroSection() {
   return (
     <Box className='box'
@@ -19,8 +20,8 @@ export default function HeroSection() {
       }}
       >A Web and Mobile Application Company specializing in business solution that help business improve their processes.</Typography>
       <Button variant="contained" sx={{
-        '&:hover':{width:'120px', height:'6vh',},
-      }}>Let's Talk</Button>
+        '&:hover':{width:'140px', height:'6vh',},
+      }}>Let's Talk <ArrowRightRoundedIcon fontSize='medium'/></Button>
       <Box display={'flex'} marginTop={'50px'} marginBottom={'50px'} width={'50%'} justifyContent={'space-between'}><Typography variant='subtitle1'
       sx={{color:'white',
         fontWeight:'500',

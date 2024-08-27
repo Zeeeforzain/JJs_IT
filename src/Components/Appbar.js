@@ -38,7 +38,7 @@ function Appbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center"}}>
-      <Title sx={{ my: 2 }} />
+      <Title />
       <Divider />
       <List>
         {navItems.map((item) => (

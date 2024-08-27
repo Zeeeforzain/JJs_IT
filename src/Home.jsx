@@ -20,14 +20,14 @@ export default function Home() {
         margin={"80px 80px"}
         display={"flex"}
         alignItems={"center"}
-        justifyContent={"space-around"}
+        justifyContent={"left"}
       >
         <Adress
           title="Islamabad, Pakistan"
-          address="Floor 2, Building 145, Civic Center Bahria Town Phase 4, Islamabad,Pakistan"
+          address="G11/4, Islamabad,Pakistan"
           email="jjit@gmail.com"
         />
-        <Adress
+        {/* <Adress
           title="USA"
           address="1 squire armor road, windham, NH,03076
 
@@ -47,7 +47,7 @@ export default function Home() {
 
     "
           email="jjit@gmail.com"
-        />
+        /> */}
       </Box>
       <Footer/>
     </Box>
