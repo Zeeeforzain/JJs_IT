@@ -5,7 +5,7 @@ import MarkunreadOutlinedIcon from "@mui/icons-material/MarkunreadOutlined";
 export default function Adress(props) {
   return (
     <Box
-      width={"24%"}
+      width={{xs:'100%',md:"24%"}}
       height={"25vh"}
       display={"flex"}
       flexDirection={"column"}

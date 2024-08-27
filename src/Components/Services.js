@@ -4,37 +4,45 @@ import ServiceComponent from "./ServiceComponent";
 import Headings from "./Headings";
 export default function Services() {
   return (
-    <Box margin={"80px 80px"}>
+    <Box margin={{ xs: "10px 10px", md: "80px 80px" }}>
       <Headings
-      titleVariant="h4" descVariant="h6" title="What Can We Do For You?" description="A Web and Mobile application Development Company specializing in
-          Digital Automation for small and medium businesses."/>
+        titleVariant="h4"
+        descVariant="h6"
+        title="What Can We Do For You?"
+        description="A Web and Mobile application Development Company specializing in
+          Digital Automation for small and medium businesses."
+      />
       <Box
-        display={"flex"}
-        justifyContent={"space-between"}
-        marginTop={"20px"}
-        marginBottom={"20px"}
+        display={{ xs: "block", sm: "flex" }}
+        flexDirection={{ xs: "column", sm: "row" }}
+        justifyContent="space-between"
+        marginTop="20px"
+        marginBottom="20px"
+        alignItems="center"
       >
         <ServiceComponent
-        img='Images/computer.svg'
-        title="CRM Application Services"
-        description="We help you develop custom CRM for your business to automate your business processes, email integration, invoicing and payment integrations, and complete end to end automation for your busines"
+          img="Images/computer.svg"
+          title="CRM Application Services"
+          description="We help you develop custom CRM for your business to automate your business processes, email integration, invoicing and payment integrations, and complete end to end automation for your business."
         />
         <ServiceComponent
-        img='Images/UX.svg'
-        title="Ideation and Design Services"
-        description="Want a simple yet valuable experience? Vizteck will aid you by providing you with a tremendous experience for product ideation and design services. That too with the best UX approach. So contact us now and get the best web and app development experience."
+          img="Images/UX.svg"
+          title="Ideation and Design Services"
+          description="Want a simple yet valuable experience? Vizteck will aid you by providing you with a tremendous experience for product ideation and design services. That too with the best UX approach. So contact us now and get the best web and app development experience."
         />
         <ServiceComponent
-          img='Images/App.svg'
+          img="Images/App.svg"
           title="OnDemand App Development"
-          description="Contact us and develop your own on-demand app like Uber, Uber Eats, scoot, and many more. We develop high-esteem on-demand startup apps that are fit for your needs. "
-          />
+          description="Contact us and develop your own on-demand app like Uber, Uber Eats, Scoot, and many more. We develop high-esteem on-demand startup apps that are fit for your needs."
+        />
       </Box>
       <Box
-        display={"flex"}
-        justifyContent={"space-between"}
-        marginTop={"20px"}
-        marginBottom={"20px"}
+      display={{ xs: "block", sm: "flex" }}
+      flexDirection={{ xs: "column", sm: "row" }}
+      justifyContent="space-between"
+      marginTop="20px"
+      marginBottom="20px"
+      alignItems="center"
         >
         <ServiceComponent
         img='Images/Saas.svg'

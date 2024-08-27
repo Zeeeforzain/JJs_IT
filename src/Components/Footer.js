@@ -14,27 +14,28 @@ export default function Footer() {
         justifyContent={"space-between"}
         alignItems={"center"}
         height={"30vh"}
-        padding={"50px 80px"}
+        padding={{xs:'10px 15px', md:"50px 80px"}}
         borderBottom={"1px solid white"}
       >
-        <Typography
-          variant="h3"
-          width={"65%"}
-          fontWeight={"700"}
-          color={"white"}
+        <Typography variant="h3"
+        sx={{
+          fontSize:{xs:'1.3rem', md:'2.5rem'},
+          width:{xs:'70%', md:'65%'},
+          fontWeight:'700',
+          color:'white'
+        }}
         >
           We Deliver The Best Customer Experience
         </Typography>
         <Button
           variant="contained"
-          size="large"
           style={{
             backgroundColor: "white",
             color: "black",
             textTransform: "none",
           }}
         >
-          Let's Get Started <ArrowRightRoundedIcon fontSize="large" />
+          Let's Get Started <ArrowRightRoundedIcon fontSize='large' />
         </Button>
       </Box>
       <Box
@@ -42,15 +43,17 @@ export default function Footer() {
         alignItems={"center"}
         justifyContent={"space-around"}
         borderBottom={"1px solid white"}
-        padding={'20px'}
+        padding={{xs:'5px',md:'20px'}}
+        flexDirection={{xs:'column', md:'row'}}
         > 
         <Box
-          width={"25%"}
+          width={{xs:'100%',md:"25%"}}
           height={"45vh"}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"left"}
           justifyContent={"space-around"}
+          borderBottom={{xs:'1px solid white'}}
         >
           <Title color="white" />
           <Typography
@@ -95,12 +98,13 @@ export default function Footer() {
           </Box>
         </Box>
         <Box
-          width={"25%"}
+          width={{xs:'100%',md:"25%"}}
           height={"45vh"}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"left"}
           justifyContent={"space-around"}
+          borderBottom={{xs:'1px solid white'}}
         >
           <List sx={{ color: "white", fontWeight: "500" }}>
             <Typography variant="h5">Quick Links</Typography>
@@ -143,7 +147,7 @@ export default function Footer() {
           </List>
         </Box>
         <Box
-          width={"20%"}
+          width={{xs:'100%',md:"20%"}}
           height={"45vh"}
           display={"flex"}
           flexDirection={"column"}
@@ -180,7 +184,9 @@ export default function Footer() {
         display={"flex"}
         alignItems={"center"}
         justifyContent={"space-around"}
-        width={"80%"}
+        width={{xs:'100%',md:"80%"}}
+        flexDirection={{xs:'column', md:'row'}}
+        textAlign={{xs:'center'}}
       >
         <Typography variant="body1" color={"white"} fontWeight={'500'}>
           Copyright © 2024 Vizteck. All Rights Reserved by{" "}

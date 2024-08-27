@@ -4,10 +4,9 @@ import ArrowRightRoundedIcon from '@mui/icons-material/ArrowRightRounded'
 export default function HeroSection() {
   return (
     <Box className='box'
-    sx={{width:'60%',
-        height:'80vh',
-        margin:'20px 20% 0px 100px',
-    }}
+    width={{xs:'100%', md:'60%'}}
+        height={'80vh'}
+        margin={'20px 20% 0px 100px'}
     >
       <Typography variant='h2'
       sx={{fontWeight:'700', color:'white'

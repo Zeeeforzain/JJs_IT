@@ -28,7 +28,8 @@ export default function Tech({ name, isActive, onBoxClick }) {
         sx={{
           width: '100%',
           height: '8vh',
-          padding: '10px',
+          padding: {xs:'5px', md:'10px'},
+          fontSize:{xs:'0.75rem', md:'1.75'}
         }}
         variant='h6'
       >

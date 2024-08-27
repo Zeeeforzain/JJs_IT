@@ -19,7 +19,7 @@ export default function Home() {
       <Tools />
       <Casestudies />
       <Box
-        margin={"80px 80px"}
+        margin={{xs:'15px 15px',md:"80px 80px"}}
         display={"flex"}
         alignItems={"center"}
         justifyContent={"left"}
