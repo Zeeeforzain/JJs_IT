@@ -8,12 +8,14 @@ import Tools from "./Components/Tools";
 import Casestudies from "./Components/Casestudies";
 import Adress from "./Components/Adress";
 import Footer from './Components/Footer';
+import Swiper from './Components/Swiper';
 export default function Home() {
   return (
     <Box className="home">
       <Appbar />
       <HeroSection />
       <Services />
+      <Swiper/>
       <Tools />
       <Casestudies />
       <Box
