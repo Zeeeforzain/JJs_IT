@@ -1,20 +1,42 @@
-import { Box ,Typography} from '@mui/material';
+
+import { Box, Typography } from '@mui/material';
 import React from 'react';
 import ArrowRightRoundedIcon from '@mui/icons-material/ArrowRight';
-export default function Tech(props) {
+
+export default function Tech({ name, isActive, onBoxClick }) {
   return (
-    <Box 
-    marginBottom={'20px'} display={'flex'} justifyContent={'space-between'} alignItems={'center'}
-    sx={{'&:hover':{boxShadow: '1px 1px 15px 5px whitesmoke', backgroundColor:'white' , cursor:'pointer'}}}>
-      <Typography 
+    <Box
+      marginBottom={'20px'}
+      display={'flex'}
+      justifyContent={'space-between'}
+      alignItems={'center'}
+      onClick={onBoxClick}
       sx={{
-        width:'100%',
-        height:'8vh',
-        color:'black', 
-        padding:'10px'
-     }}
-      variant='h6'>{props.name}</Typography>
-      <ArrowRightRoundedIcon fontSize='large'/>
+        backgroundColor: isActive ? '#1769aa' : 'transparent',
+        color: isActive? 'white':'black',
+        borderRadius:'5px',
+        '&:hover': {
+          boxShadow: '1px 1px 15px 5px whitesmoke',
+          backgroundColor: isActive ? '#1769aa' : 'white',
+          color: isActive? 'white':'black',
+          cursor: 'pointer',
+          borderRadius:'5px'
+        },
+      }}
+    >
+      <Typography
+        sx={{
+          width: '100%',
+          height: '8vh',
+          padding: '10px',
+        }}
+        variant='h6'
+      >
+        {name}
+      </Typography>
+      <ArrowRightRoundedIcon fontSize='large' />
     </Box>
   );
 }
+
+
