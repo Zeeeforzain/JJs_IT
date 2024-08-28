@@ -12,12 +12,12 @@ export default function Tech({ name, isActive, onBoxClick }) {
       alignItems={'center'}
          onClick={onBoxClick}
       sx={{
-        backgroundColor: isActive ? '#1769aa' : 'transparent',
+        backgroundColor: isActive ? '#D30A0A' : 'transparent',
         color: isActive? 'white':'black',
         borderRadius:'5px',
         '&:hover': {
           boxShadow: '1px 1px 15px 5px whitesmoke',
-          backgroundColor: isActive ? '#1769aa' : 'white',
+          backgroundColor: isActive ? '#D30A0A' : 'white',
           color: isActive? 'white':'black',
           cursor: 'pointer',
           borderRadius:'5px'

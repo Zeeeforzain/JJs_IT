@@ -32,6 +32,7 @@ export default function HeroSection() {
     
      > <Button
   variant="contained"
+  color="error"
   sx={{
     "&:hover": {
       width: "140px",

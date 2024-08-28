@@ -8,7 +8,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
 export default function Footer() {
   return (
-    <Box sx={{ backgroundColor: "#1769aa" }}>
+    <Box sx={{ backgroundColor: "#D30A0A" }}>
       <Box
         display={"flex"}
         justifyContent={"space-between"}

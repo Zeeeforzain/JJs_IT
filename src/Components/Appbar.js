@@ -22,7 +22,7 @@ const navItems = [
     label: (
       <Button
         variant="contained"
-        color="primary"
+        color="error"
         sx={{
           "&:hover": {
             width: "130px",
