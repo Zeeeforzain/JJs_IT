@@ -8,11 +8,10 @@ import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
+import {useNavigate} from "react-router-dom";
 import Title from "./Title";
 
 const drawerWidth = 240;
@@ -22,19 +21,16 @@ const navItems = [
   "Portfolio",
   "Blog",
   <Button
-    variant="contained"
-    color="primary"
-    sx={{
-      "&:hover": {
-        width: "130px",
-        height: "7vh",
-        transition: "0.5s ease-out",
-      },
-    }}
-  >
-    Book Demo
-  </Button>,
-];
+  variant="contained"
+  color="primary"
+  sx={{
+    "&:hover": {
+      width: "130px",
+      height: "7vh",
+      transition: "0.5s ease-out",
+    },
+  }}>Book Demo</Button>
+]
 
 function Appbar(props) {
   const { window } = props;
@@ -49,20 +45,29 @@ function Appbar(props) {
       <Title />
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <ListItem onClick={()=>{navigate("/Home")}} >Home</ListItem>
+        <ListItem>Portfolio</ListItem>
+        <ListItem>Services</ListItem>
+        <ListItem>Blogs</ListItem>
+        <ListItem>
+        <Button
+    variant="contained"
+    color="primary"
+    sx={{
+      "&:hover": {
+        width: "130px",
+        height: "7vh",
+        transition: "0.5s ease-out",
+      },
+    }}>Book Demo</Button>
+        </ListItem>
       </List>
     </Box>
   );
 
   const container =
     window !== undefined ? () => window().document.body : undefined;
-
+    const navigate = useNavigate();
   return (
     <Box
       sx={{
@@ -105,7 +110,7 @@ function Appbar(props) {
       >
         {item}
       </Button>
-    ))}
+      ))}
   </Box>
 </Toolbar>
 
