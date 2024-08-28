@@ -191,7 +191,7 @@ export default function Footer() {
         display={"flex"}
         alignItems={"center"}
         justifyContent={"space-around"}
-        width={{ xs: "100%", md: "80%" }}
+        width={{ xs: "95%", md: "80%" }}
         flexDirection={{ xs: "column", md: "row" }}
         textAlign={{ xs: "center" }}
       >

@@ -6,7 +6,8 @@ import styled from 'styled-components';
 const TitleContainer = styled(Box)`
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  width:270px;
+  justify-content: space-around;
   align-items: center;
  margin:15px;
   cursor: pointer;
