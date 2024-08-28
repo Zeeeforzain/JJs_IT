@@ -100,7 +100,7 @@ export default function Footer() {
         </Box>
         <Box
           width={{ xs: "100%", md: "25%" }}
-          height={"45vh"}
+          height={"40vh"}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"left"}
@@ -196,7 +196,7 @@ export default function Footer() {
         textAlign={{ xs: "center" }}
       >
         <Typography variant="body1" color={"white"} fontWeight={"500"}>
-          Copyright © 2024 Vizteck. All Rights Reserved by{" "}
+          Copyright © 2024 JJs IT. All Rights Reserved by{" "}
           <Typography
             component="span"
             variant="body1"

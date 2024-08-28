@@ -12,7 +12,7 @@ export default function Tools() {
   };
 
   return (
-    <Box margin={{ xs: "10px 10px", md: "80px 80px" }}>
+    <Box margin={{ xs: "10px 10px", md: "40px 80px" }}>
       <Headings
         titleVariant="h4"
         descVariant="h6"

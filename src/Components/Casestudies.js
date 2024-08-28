@@ -4,7 +4,7 @@ import Headings from "./Headings";
 
 export default function Casestudies() {
   return (
-    <Box margin={{ xs: "10px 10px", md: "80px 80px" }}>
+    <Box margin={{ xs: "10px 10px", md: "30px 80px" }}>
       <Headings
         titleVariant="h4"
         descVariant="h6"

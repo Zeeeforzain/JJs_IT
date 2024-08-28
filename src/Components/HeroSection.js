@@ -26,14 +26,21 @@ export default function HeroSection() {
         A Web and Mobile Application Company specializing in business solution
         that help business improve their processes.
       </Typography>
-      <Button
-        variant="contained"
-        sx={{
-          "&:hover": { width: "140px", height: "6vh" },
-        }}
-      >
-        Let's Talk <ArrowRightRoundedIcon fontSize="medium" />
+     <Box
+     width={'138px'}
+     height={'6vh'}
+    
+     > <Button
+  variant="contained"
+  sx={{
+    "&:hover": {
+      width: "140px",
+      height: "7vh",
+      transition: "width 0.6s ease-out, height 0.6s ease-out",
+    },}}
+> Let's Talk <ArrowRightRoundedIcon fontSize="medium" />
       </Button>
+      </Box>
       <Box
         display={"flex"}
         marginTop={"50px"}

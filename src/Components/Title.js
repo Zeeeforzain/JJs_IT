@@ -20,7 +20,7 @@ const NameContainer = styled(Box)`
 `;
 
 const Logo = styled.img`
-  width: 40px;
+  width: 80px;
   height: auto;
 `;
 
@@ -38,7 +38,7 @@ const TitleH4 = styled.h4`
 export default function Title(props) {
   return (
     <TitleContainer>
-      <Logo src="Images/jjs_it.png" alt="logo" />
+      <Logo src="Images/jjs_it.svg" alt="logo" />
       <NameContainer>
         <Typography variant="h6" color={props.color}>JUNAID & JAWAD</Typography>
         <Typography variant="caption" color={props.color}> CONSULTANCY </Typography>

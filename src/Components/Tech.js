@@ -10,7 +10,7 @@ export default function Tech({ name, isActive, onBoxClick }) {
       display={'flex'}
       justifyContent={'space-between'}
       alignItems={'center'}
-      onClick={onBoxClick}
+         onClick={onBoxClick}
       sx={{
         backgroundColor: isActive ? '#1769aa' : 'transparent',
         color: isActive? 'white':'black',
@@ -27,7 +27,6 @@ export default function Tech({ name, isActive, onBoxClick }) {
       <Typography
         sx={{
           width: '100%',
-          height: '8vh',
           padding: {xs:'5px', md:'10px'},
           fontSize:{xs:'0.75rem', md:'1.25rem'}
         }}
