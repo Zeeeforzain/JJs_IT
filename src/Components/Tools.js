@@ -76,7 +76,7 @@ export default function Tools() {
           {activeTech === "Mobile App Development" && (
             <>
               <Software img="Images/react.png" name="React Native" />
-              <Software img="Images/flutter.svg" name="Flutter" />
+              <Software img="Images/flutter.png" name="Flutter" />
               <Software img="Images/native.png" name="Native Android & iOS" />
             </>
           )}
