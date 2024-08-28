@@ -76,12 +76,12 @@ export default function Tools() {
           {activeTech === "Mobile App Development" && (
             <>
               <Software img="Images/react.png" name="React Native" />
-              <Software img="Images/Flutter.svg" name="Flutter" />
+              <Software img="Images/flutter.svg" name="Flutter" />
               <Software img="Images/native.png" name="Native Android & iOS" />
             </>
           )}
           {activeTech === "Web Development" && (
-            <Software img="Images/Wordpress.png" name="Word Press" />
+            <Software img="Images/wordpress.png" name="Word Press" />
           )}
           {activeTech === "Backend Development" && (
             <Software img="Images/node.png" name="Node Js" />
