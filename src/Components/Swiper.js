@@ -63,6 +63,7 @@ const Swiper = () => {
         width: "95%",
         margin: "auto",
         overflow: "hidden",
+       
       }}
     >
       <Box

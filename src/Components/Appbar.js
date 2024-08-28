@@ -21,9 +21,17 @@ const navItems = [
   "Services",
   "Portfolio",
   "Blog",
-  <Button variant="contained" color="primary" sx={{'&:hover':{
-    width:'130px', height:'7vh', transition:"0.5s ease-out",}}
-}>
+  <Button
+    variant="contained"
+    color="primary"
+    sx={{
+      "&:hover": {
+        width: "130px",
+        height: "7vh",
+        transition: "0.5s ease-out",
+      },
+    }}
+  >
     Book Demo
   </Button>,
 ];
@@ -37,7 +45,7 @@ function Appbar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center"}}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Title />
       <Divider />
       <List>
@@ -56,37 +64,51 @@ function Appbar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "flex-start",
+      }}
+    >
       <CssBaseline />
-      <AppBar component="nav"
-      sx={{backgroundColor:'white' , color:'Black'}}
+      <AppBar
+        component="nav"
+        sx={{
+          position:'absolute',
+          backgroundColor: "white",
+          color: "Black",
+          width: { xs: "100%", md: "100%" },
+          justifyContent:'flex-start',
+        }}
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-            
-          >
-            <MenuIcon />
-          </IconButton>
+  <IconButton
+    color="inherit"
+    aria-label="open drawer"
+    edge="start"
+    onClick={handleDrawerToggle}
+    sx={{ mr: 2, display: { sm: "none" } }}
+  >
+    <MenuIcon />
+  </IconButton>
+  <Title/>
+  <Box
+    sx={{
+      display: { xs: "none", sm: "block" },
+      width: "50%",
+    }}
+  >
+    {navItems.map((item) => (
+      <Button
+        key={item}
+        sx={{ color: "#000", mx: 2, fontWeight: "700" }}
+      >
+        {item}
+      </Button>
+    ))}
+  </Box>
+</Toolbar>
 
-          <Title />
-          <Box
-            sx={{
-              display: { xs: "none", sm: "block" },
-              width: "50%",
-            }}
-          >
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#000", mx:2, fontWeight:'700' }}>
-                {item}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
       </AppBar>
       <nav>
         <Drawer
