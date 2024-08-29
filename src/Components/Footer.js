@@ -102,7 +102,7 @@ export default function Footer() {
         </Box>
         <Box
           width={{ xs: "100%", md: "25%" }}
-          height={"40vh"}
+          height={"38vh"}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"left"}
