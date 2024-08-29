@@ -1,7 +1,9 @@
 import { Box, Typography, Button } from "@mui/material";
 import React from "react";
 import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
+import {useNavigate} from "react-router-dom";
 export default function HeroSection() {
+  const navigate = useNavigate();
   return (
     <Box
       className="box"
@@ -30,7 +32,7 @@ export default function HeroSection() {
      width={'138px'}
      height={'6vh'}
     
-     > <Button
+     > <Button onClick={()=>{navigate("/ContactForm")}}
   variant="contained"
   color="error"
   sx={{

@@ -6,7 +6,9 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
+import {useNavigate} from "react-router-dom";
 export default function Footer() {
+  const navigate = useNavigate();
   return (
     <Box sx={{ backgroundColor: "#D30A0A" }}>
       <Box
@@ -28,7 +30,7 @@ export default function Footer() {
         >
           We Deliver The Best Customer Experience
         </Typography>
-        <Button
+        <Button onClick={()=>{navigate("/ContactForm")}}
           variant="contained"
           style={{
             backgroundColor: "white",

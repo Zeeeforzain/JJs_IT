@@ -33,7 +33,7 @@ const navItems = [
       >
         Book Demo
       </Button>
-    ),
+    ), path:'/ContactForm'
   },
 ];
 
