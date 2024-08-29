@@ -38,7 +38,7 @@ export default function Footer() {
           variant="contained"
           sx={{
             backgroundColor: "white",
-            width: { xs: "45%", md: "auto" },
+            width: { xs: "50%", md: "auto" },
             color: "black",
             textTransform: "none",
             margin: "10px 20px",
