@@ -6,17 +6,18 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 export default function Footer() {
   const navigate = useNavigate();
   return (
-    <Box sx={{ backgroundColor: "#D30A0A" }}>
+    <Box sx={{ backgroundColor: "#004cb2" }}>
       <Box
         display={"flex"}
-        justifyContent={"space-between"}
-        alignItems={"center"}
-        height={"30vh"}
-        padding={{ xs: "10px 15px", md: "50px 80px" }}
+        flexDirection={{ xs: "column", md: "row" }}
+        justifyContent={{ xs: "left", md: "space-between" }}
+        alignItems={""}
+        height={{ xs: "auto", md: "30vh" }}
+        padding={{ xs: "5px", md: "50px 80px" }}
         borderBottom={"1px solid white"}
       >
         <Typography
@@ -26,19 +27,28 @@ export default function Footer() {
             width: { xs: "70%", md: "65%" },
             fontWeight: "700",
             color: "white",
+            margin: "10px 20px",
           }}
         >
           We Deliver The Best Customer Experience
         </Typography>
-        <Button onClick={()=>{navigate("/ContactForm")}}
+
+        <Button
+          onClick={() => navigate("/ContactForm")}
           variant="contained"
-          style={{
+          sx={{
             backgroundColor: "white",
+            width: { xs: "45%", md: "auto" },
             color: "black",
             textTransform: "none",
+            margin: "10px 20px",
+            borderRadius: "10px",
+            fontFamily: "helvetica",
+            fontSize: "15px",
+            '&:hover':{color:'white'}
           }}
         >
-          Let's Get Started <ArrowRightRoundedIcon fontSize="large" />
+          Let's Get Started <ArrowRightRoundedIcon xs={{fontSize:{xs:'small', md:'large'}}} />
         </Button>
       </Box>
       <Box

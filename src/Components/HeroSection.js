@@ -34,7 +34,7 @@ export default function HeroSection() {
     
      > <Button onClick={()=>{navigate("/ContactForm")}}
   variant="contained"
-  color="error"
+  color="primary"
   sx={{
     "&:hover": {
       width: "140px",
@@ -44,7 +44,7 @@ export default function HeroSection() {
 > Let's Talk <ArrowRightRoundedIcon fontSize="medium" />
       </Button>
       </Box>
-      <Box
+      {/* <Box
         display={"flex"}
         marginTop={"50px"}
         marginBottom={"50px"}
@@ -85,8 +85,7 @@ export default function HeroSection() {
             src="Images/mygroser.png"
             alt="logo"
           />
-        </Box>
+        </Box> */}
       </Box>
-    </Box>
   );
 }

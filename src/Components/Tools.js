@@ -14,7 +14,7 @@ export default function Tools() {
   return (
     <Box margin={{ xs: "10px 10px", md: "40px 80px" }}>
       <Headings
-        titleVariant="h4"
+        titleVariant="h3"
         descVariant="h6"
         title="Tools and Technologies We Work In!"
         description="Assuring to provide exceptional customer experience and drive meaningful insights using the digital world's best app development practices and technology"

@@ -3,18 +3,19 @@ import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
+import Toolbar from "@mui/material/Toolbar";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { useNavigate } from "react-router-dom";
 import Title from "./Title";
 
-const drawerWidth = 240;
+const drawerWidth = 260;
 const navItems = [
   { label: "Home", path: "/Home" },
   { label: "Services", path: "/Tools" },
@@ -22,7 +23,7 @@ const navItems = [
     label: (
       <Button
         variant="contained"
-        color="error"
+        color="primary"
         sx={{
           "&:hover": {
             width: "130px",
@@ -33,13 +34,15 @@ const navItems = [
       >
         Book Demo
       </Button>
-    ), path:'/ContactForm'
+    ),
+    path: "/ContactForm",
   },
 ];
 
 function Appbar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [scrolling, setScrolling] = React.useState(false);
   const navigate = useNavigate();
 
   const handleDrawerToggle = () => {
@@ -49,6 +52,15 @@ function Appbar(props) {
   const handleNavClick = (path) => {
     navigate(path);
   };
+
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+  });
+
+  React.useEffect(() => {
+    setScrolling(trigger);
+  }, [trigger]);
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -68,38 +80,53 @@ function Appbar(props) {
     </Box>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "flex-start" }}>
+    <Box sx={{ display: "flex", justifyContent: "start" }}>
       <CssBaseline />
       <AppBar
         component="nav"
         sx={{
-          position: "absolute",
-          backgroundColor: "white",
-          color: "Black",
+          position: { xs: "absolute", md: "fixed" },
+          backgroundColor: scrolling ? "white" : "transparent",
+          color: scrolling ? "black" : "white",
           width: { xs: "100%", md: "100%" },
-          justifyContent: "flex-start",
+          display: "flex",
+          justifyContent: "center",
+          boxShadow: scrolling ? 1 : 0,
+          transition: "background-color 0.3s ease, color 0.3s ease",
         }}
       >
-        <Toolbar sx={{ justifyContent: "space-between" }}>
+        <Toolbar
+          sx={{
+            justifyContent: "space-between",
+            flexDirection: { xs: "row-reverse", md: "row" },
+          }}
+        >
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            edge="start"
+            edge="end"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 0, display: { xs: "block", sm: "none" } }}
           >
             <MenuIcon />
           </IconButton>
-          <Title />
+          <Title
+            sx={{
+              display: { xs: "none", sm: "block" },
+              flexGrow: 0,
+              ml: { xs: 0, sm: 2 },
+            }}
+          />
           <Box sx={{ display: { xs: "none", sm: "block" }, width: "35%" }}>
             {navItems.map((item, index) => (
               <Button
                 key={index}
                 onClick={() => item.path && handleNavClick(item.path)}
-                sx={{ color: "#000", mx: 2, fontWeight: "700" }}
+                sx={{ color: scrolling ? "black" : "white", mx: 2, fontWeight: "700" }}
               >
                 {item.label}
               </Button>

@@ -1,49 +1,50 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import styled from 'styled-components';
 
-const TitleContainer = styled(Box)`
-  display: flex;
-  flex-direction: row;
-  width:270px;
-  justify-content: space-around;
-  align-items: center;
- margin:15px;
-  cursor: pointer;
-`;
+const Title = (props) => {
+  const titleContainerStyle = {
+    display: 'flex',
+    flexDirection: 'row',
+    width: '235px',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '15px',
+    cursor: 'pointer',
+  };
 
-const NameContainer = styled(Box)`
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+  const nameContainerStyle = {
+    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  };
 
-const Logo = styled.img`
-  width: 80px;
-  height: auto;
-`;
+  const logoStyle = {
+    width: '60px',
+    height: 'auto',
+  };
 
-const TitleH4 = styled.h4`
-  font-weight: 500;
-  color: ${(props) => props.color};
-  `;
-  
-  const TitleH6 = styled.h6`
-  letter-spacing: 3px;
-  font-weight: 400;
-  color: ${(props) => props.color};
-`;
+  const titleH6Style = {
+    letterSpacing: '6px',
+    fontWeight: '500',
+    color: props.color,
+  };
 
-export default function Title(props) {
+  const titleH4Style = {
+    fontWeight: 700,
+    color: props.color,
+  };
+
   return (
-    <TitleContainer>
-      <Logo src="Images/jjs_it.svg" alt="logo" />
-      <NameContainer>
-        <Typography variant="h6" color={props.color}>JUNAID & JAWAD</Typography>
-        <Typography variant="caption" color={props.color}> CONSULTANCY </Typography>
-      </NameContainer>
-    </TitleContainer>
+    <Box style={titleContainerStyle}>
+      <img src="Images/jjs_it.png" alt="logo" style={logoStyle} />
+      <Box style={nameContainerStyle}>
+        <Typography variant='h6' style={titleH4Style}>JUNAID & JAWAD</Typography>
+        <Typography variant="caption" style={titleH6Style}> CONSULTANCY </Typography>
+      </Box>
+    </Box>
   );
 }
+
+export default Title;

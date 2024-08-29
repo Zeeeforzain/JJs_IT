@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <Box margin={{ xs: "10px 10px", md: "40px 80px" }}>
       <Headings
-        titleVariant="h4"
+        titleVariant="h3"
         descVariant="h6"
         title="What Can We Do For You?"
         description="A Web and Mobile application Development Company specializing in

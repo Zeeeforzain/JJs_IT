@@ -74,7 +74,7 @@ export default function Form() {
   }}>
   <Button
     variant="contained"
-    color="error"
+    color="primary"
     sx={{
         width:{xs:'100%',md:'30%'},
     }}

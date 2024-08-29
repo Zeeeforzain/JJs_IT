@@ -6,7 +6,7 @@ export default function Casestudies() {
   return (
     <Box margin={{ xs: "10px 10px", md: "30px 80px" }}>
       <Headings
-        titleVariant="h4"
+        titleVariant="h3"
         descVariant="h6"
         title="Case Studies!"
         description="Looking for a team who could help you meet your app development requirements? Here’s how we have helped various entrepreneurs in their journey."

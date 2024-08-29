@@ -7,13 +7,17 @@ import { Box, Typography } from "@mui/material";
 export default function ContactForm() {
   return (
     <Box className="contactForm">
+      <Box
+      sx={{
+      backgroundImage: 'url(/Images/Home.png)',
+      backgroundSize:'100% 100%', 
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition:'center',}}
+      >
       <Appbar />
       <Box 
       sx={{
-        backgroundImage: 'url(/Images/Home.png)',
-        backgroundSize:'100% 100%', 
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition:'center',
+        
         display: 'flex',
         flexDirection: { xs: 'column', md: 'row' },
         justifyContent: {xs:'center',md:'space-around'},
@@ -46,51 +50,9 @@ export default function ContactForm() {
             Give us a chance to answer all your business development related
             queries.
           </Typography>
-          <Box
-            display={"flex"}
-            marginTop={"50px"}
-            marginBottom={"50px"}
-            width={{ xs: "80%", md: "70%" }}
-            alignItems={"center"}
-            justifyContent={"space-between"}
-          >
-            <Typography
-              variant="subtitle1"
-              sx={{
-                color: "white",
-                fontWeight: "500",
-                marginTop: "20",
-                marginBottom: "20",
-                width: "40%",
-              }}
-            >
-              Trusted By:
-            </Typography>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: { xs: "column", md: "row" },
-                justifyContent: "space-between",
-                alignItems: "center",
-                width: "100%",
-              }}
-            >
-              <img
-                width={"130px"}
-                height={"45px"}
-                src="Images/nesma.png"
-                alt="logo"
-              />
-              <img
-                width={"130px"}
-                height={"45px"}
-                src="Images/mygroser.png"
-                alt="logo"
-              />
-            </Box>
-          </Box>
         </Box>
             <Form/>
+      </Box>
       </Box>
       <Box 
       margin={'40px 60px '}
