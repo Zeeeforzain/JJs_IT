@@ -89,7 +89,7 @@ function Appbar(props) {
       <AppBar
         component="nav"
         sx={{
-          position: { xs: "absolute", md: "fixed" },
+          position: "fixed",
           backgroundColor: scrolling ? "white" : "transparent",
           color: scrolling ? "black" : "white",
           width: { xs: "100%", md: "100%" },
@@ -116,17 +116,23 @@ function Appbar(props) {
           </IconButton>
           <Title
             sx={{
-              display: { xs: "none", sm: "block" },
+              display: { xs: "block", sm: "block" },
               flexGrow: 0,
               ml: { xs: 0, sm: 2 },
+              textAlign: { xs: "left", sm: "inherit" },
             }}
           />
+
           <Box sx={{ display: { xs: "none", sm: "block" }, width: "35%" }}>
             {navItems.map((item, index) => (
               <Button
                 key={index}
                 onClick={() => item.path && handleNavClick(item.path)}
-                sx={{ color: scrolling ? "black" : "white", mx: 2, fontWeight: "700" }}
+                sx={{
+                  color: scrolling ? "black" : "white",
+                  mx: 2,
+                  fontWeight: "700",
+                }}
               >
                 {item.label}
               </Button>
@@ -145,7 +151,10 @@ function Appbar(props) {
           }}
           sx={{
             display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
         >
           {drawer}
