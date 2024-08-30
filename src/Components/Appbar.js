@@ -75,7 +75,7 @@ function Appbar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Box
-      margin={"10px 0px 10px 0px"}
+      margin={"10px 0px 10px 10px"}
       ><Title img="Images/jjs_it.png" width='50px' /></Box>
       <Divider />
       <List>
