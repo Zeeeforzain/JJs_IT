@@ -15,7 +15,7 @@ export default function Footer() {
         display={"flex"}
         flexDirection={{ xs: "column", md: "row" }}
         justifyContent={{ xs: "left", md: "space-between" }}
-        alignItems={"center"}
+        alignItems={"left"}
         height={{ xs: "auto", md: "30vh" }}
         padding={{ xs: "5px", md: "50px 80px" }}
         borderBottom={"1px solid white"}
