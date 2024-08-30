@@ -8,9 +8,8 @@ const Title = (props) => {
     display: 'flex',
     flexDirection: 'row',
     width: '235px',
-    justifyContent: 'center',
+    justifyContent: 'left',
     alignItems: 'center',
-    margin: '10px 15px 10px 15px',
     cursor: 'pointer',
   };
 

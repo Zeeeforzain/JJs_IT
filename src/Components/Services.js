@@ -4,7 +4,7 @@ import ServiceComponent from "./ServiceComponent";
 import Headings from "./Headings";
 export default function Services() {
   return (
-    <Box margin={{ xs: "20px 10px", md: "40px 80px" }}>
+    <Box margin={{ xs: "10px 10px", md: "40px 80px" }}>
       <Headings
         titleVariant="h3"
         descVariant="h6"

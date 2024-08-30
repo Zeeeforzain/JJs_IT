@@ -68,12 +68,14 @@ export default function Footer() {
           alignItems={"left"}
           justifyContent={"space-around"}
           borderBottom={{ xs: "1px solid white", md: "none" }}
+        ><Box
+        margin={"10px 0px 10px 10px"}
         >
           <Title 
           img="Images/jjs_it2.png"
           color="white" 
           width='30px'
-          />
+          /></Box>
           <Typography
             varient="body1"
             width={"100%"}
