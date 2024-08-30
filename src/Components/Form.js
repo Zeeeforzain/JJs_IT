@@ -15,8 +15,8 @@ export default function Form() {
       <Headings
         titleVariant="h5"
         descVariant="body1"
-        title="Book a Demo"
-        description="We provide high-impact mobile and application development services"
+        title="Contact Us"
+        description="We deliver powerful mobile and application development services that drive impactful results"
       />
 
       <Box

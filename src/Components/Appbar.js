@@ -74,7 +74,7 @@ function Appbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Title img="Images/jjs_it.png" />
+      <Title img="Images/jjs_it.png" width='50px' />
       <Divider />
       <List>
         {navItems.map((item, index) => (
@@ -124,7 +124,7 @@ function Appbar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Title img="Images/jjs_it.png" 
+          <Title img="Images/jjs_it.png" width='50px'
             sx={{
               display: { xs: "block", sm: "block" },
               flexGrow: 0,

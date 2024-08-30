@@ -4,8 +4,9 @@ import Footer from "./Components/Footer";
 import Adress from "./Components/Adress";
 import Form from "./Components/Form";
 import { Box, Typography } from "@mui/material";
+
 export default function ContactForm() {
-  
+ 
   return (
     <Box className="contactForm">
       <Box
@@ -42,14 +43,13 @@ export default function ContactForm() {
               fontSize: { xs: "1.75rem", md: "2.75rem" },
             }}
           >
-            Embark On Your Digital Journey Today
+            Begin Your Digital Journey Today
           </Typography>
           <Typography
             variant="h6"
             sx={{ color: "white", marginTop: "20px", marginBottom: "20px" }}
           >
-            Give us a chance to answer all your business development related
-            queries.
+           Let us assist you with all your business development queries.
           </Typography>
         </Box>
             <Form/>

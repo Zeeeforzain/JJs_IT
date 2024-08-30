@@ -71,7 +71,9 @@ export default function Footer() {
         >
           <Title 
           img="Images/jjs_it2.png"
-          color="white" />
+          color="white" 
+          width='30px'
+          />
           <Typography
             varient="body1"
             width={"100%"}
@@ -109,7 +111,7 @@ export default function Footer() {
           >
             <LocationOnOutlinedIcon fontSize="medium" sx={{ color: "white" }} />
             <Typography variant="body1" marginLeft={"10px"} fontWeight={"500"}>
-              Floor 3, Office no 6, G11/4 Islamabad, Pakistan
+              Floor 3, Office No. 6, G-11/4 Islamabad, Pakistan
             </Typography>
           </Box>
         </Box>

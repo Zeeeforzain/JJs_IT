@@ -68,10 +68,10 @@ export default function Tools() {
         </Box>
         <Box
           display={"flex"}
-          flexDirection={{ xs: "column", md: "row" }}
-          justifyContent={{ xs: "center", md: "space-around" }}
-          alignItems={{xs:"center", md:"start"}}
-          width={{ xs: "40%", md: "50%" }}
+          flexDirection={{ xs: "row", md: "row" }}
+          justifyContent={{ xs: "space-between", md: "space-around" }}
+          alignItems={{xs:"start", md:"start"}}
+          width={{ xs: "70%", md: "50%" }}
         >
           {activeTech === "Mobile App Development" && (
             <>
