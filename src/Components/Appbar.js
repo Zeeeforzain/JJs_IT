@@ -15,7 +15,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { useNavigate } from 'react-router-dom';
 import Title from './Title';
 
-const drawerWidth = 260;
+const drawerWidth = 220;
 const navItems = [
   { label: "Home", path: "/" },
   { label: "Services", path: "/#tools" },
@@ -80,10 +80,15 @@ function Appbar(props) {
       <Divider />
       <List>
         {navItems.map((item, index) => (
-          <ListItem
+            <ListItem
             key={index}
             onClick={() => item.path && handleNavClick(item.path)}
-            sx={{ cursor: item.path ? "pointer" : "default" }}
+            sx={{ 
+              cursor: item.path ? "pointer" : "default",
+              justifyContent: "center",
+              textAlign: "center",
+              width: "100%" 
+            }}
           >
             {item.label}
           </ListItem>
