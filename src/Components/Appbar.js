@@ -32,7 +32,7 @@ const navItems = [
           },
         }}
       >
-        Book Demo
+        Contact Us
       </Button>
     ),
     path: "/ContactForm",
