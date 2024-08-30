@@ -15,7 +15,7 @@ export default function Footer() {
         display={"flex"}
         flexDirection={{ xs: "column", md: "row" }}
         justifyContent={{ xs: "left", md: "space-between" }}
-        alignItems={""}
+        alignItems={"center"}
         height={{ xs: "auto", md: "30vh" }}
         padding={{ xs: "5px", md: "50px 80px" }}
         borderBottom={"1px solid white"}
@@ -161,41 +161,7 @@ export default function Footer() {
             </ListItem>
           </List>
         </Box>
-        {/* <Box
-          width={{ xs: "100%", md: "20%" }}
-          height={'auto'}
-          display={"flex"}
-          flexDirection={"column"}
-          alignItems={"left"}
-          justifyContent={"space-around"}
-        >
-          <List sx={{ color: "white", fontWeight: "500" }}>
-            <Typography variant="h5"
-          
-            >Our Blogs</Typography>
-            <ListItem
-              sx={{
-                "&:hover": { textDecoration: "Underline", cursor: "pointer" },
-              }}
-            >
-              Best Headless CMS|Top 10 Best Options
-            </ListItem>
-            <ListItem
-              sx={{
-                "&:hover": { textDecoration: "Underline", cursor: "pointer" },
-              }}
-            >
-              Creating A Social Media App in 2022
-            </ListItem>
-            <ListItem
-              sx={{
-                "&:hover": { textDecoration: "Underline", cursor: "pointer" },
-              }}
-            >
-              Creating an Educationl Android App - The Complete Guide
-            </ListItem>
-          </List>
-        </Box> */}
+       
       </Box>
       <Box
         display={"flex"}
