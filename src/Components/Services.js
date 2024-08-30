@@ -22,30 +22,35 @@ export default function Services() {
         <ServiceComponent
           img="Images/UX.svg"
           title="Ideation and Design Services"
-          description="Want a simple yet valuable experience? JJs IT will aid you by providing you with a tremendous experience for product ideation and design services. That too with the best UX approach. So contact us now and get the best web and app development experience."
+          description="Looking for a straightforward yet impactful experience? JJs IT is here to offer you exceptional product ideation and design services, all with a top-notch UX approach. Reach out to us today and enjoy the finest web and app development experience."
         />
         <ServiceComponent
           img="Images/App.svg"
-          title="OnDemand App Development"
-          description="Contact us and develop your own on-demand app like Uber, Uber Eats, Scoot, and many more. We develop high-esteem on-demand startup apps that are fit for your needs."
+          title="Mobile App Development"
+          description="Get in touch with us to create your own on-demand app, just like Uber, Uber Eats, Scoot, and more. We specialize in developing high-quality on-demand startup apps tailored to meet your specific needs."
         />
         <ServiceComponent
-        img='Images/Web.svg'
-        title="Web Development Services"
-        description="From custom web development services to content management solutions, JJs IT offers you the best web development services, including headless CMS for each search engine."
+          img="Images/Web.svg"
+          title="Web Development Services"
+          description="From bespoke web development to content management solutions, JJs IT provides top-tier web development services, including headless CMS optimized for every search engine.'"
         />
       </Box>
       <Box
-      display={{ xs: "block", sm: "flex" }}
-      flexDirection={{ xs: "column", sm: "row" }}
-      justifyContent="center"
-      marginTop="10px"
-      alignItems="center"
-        >
+        display={{ xs: "block", sm: "flex" }}
+        flexDirection={{ xs: "column", sm: "row" }}
+        justifyContent="space-around"
+        marginTop="10px"
+        alignItems="start"
+      >
         <ServiceComponent
-        img='Images/API.svg'
+          img="Images/API.svg"
           title="API Integration Services"
-          description="JJs IT has expertise in API Integration and Automation Services to connect your systems seamlessly between your websites, CRM, and accounting tools."
+          description="JJs IT specializes in API integration and automation services, ensuring seamless connectivity between your websites, CRM, and accounting tools."
+        />
+        <ServiceComponent
+          img="Images/computer.svg"
+          title="Software Quality Assurance"
+          description="Offering comprehensive software quality assurance services, I ensure that your software products meet the highest standards of reliability and performance. Through meticulous testing and analysis, I identify and address issues early, delivering a seamless and bug-free user experience."
         />
       </Box>
     </Box>

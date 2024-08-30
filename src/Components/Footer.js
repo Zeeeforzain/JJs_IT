@@ -69,7 +69,9 @@ export default function Footer() {
           justifyContent={"space-around"}
           borderBottom={{ xs: "1px solid white", md: "none" }}
         >
-          <Title color="white" />
+          <Title 
+          img="Images/jjs_it2.png"
+          color="white" />
           <Typography
             varient="body1"
             width={"100%"}
@@ -94,7 +96,7 @@ export default function Footer() {
               height={"auto"}
             />
             <Typography variant="body1" marginLeft={"10px"} fontWeight={"500"}>
-              +92 00000000
+              +92 345 5276648
             </Typography>
           </Box>
           <Box
@@ -141,13 +143,6 @@ export default function Footer() {
                 "&:hover": { textDecoration: "Underline", cursor: "pointer" },
               }}
             >
-              Portfolio
-            </ListItem>
-            <ListItem
-              sx={{
-                "&:hover": { textDecoration: "Underline", cursor: "pointer" },
-              }}
-            >
               Mobile App Development
             </ListItem>
             <ListItem
@@ -162,11 +157,11 @@ export default function Footer() {
                 "&:hover": { textDecoration: "Underline", cursor: "pointer" },
               }}
             >
-              Ideation & Design
+              UI/UX Services
             </ListItem>
           </List>
         </Box>
-        <Box
+        {/* <Box
           width={{ xs: "100%", md: "20%" }}
           height={'auto'}
           display={"flex"}
@@ -200,7 +195,7 @@ export default function Footer() {
               Creating an Educationl Android App - The Complete Guide
             </ListItem>
           </List>
-        </Box>
+        </Box> */}
       </Box>
       <Box
         display={"flex"}
@@ -211,7 +206,7 @@ export default function Footer() {
         textAlign={{ xs: "center" }}
       >
         <Typography variant="body1" color={"white"} fontWeight={"500"}>
-          Copyright © 2024 JJs IT. All Rights Reserved by{" "}
+          Copyright © 2024 JJs. All Rights Reserved by{" "}
           <Typography
             component="span"
             variant="body1"

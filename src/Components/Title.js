@@ -38,7 +38,7 @@ const Title = (props) => {
 
   return (
     <Box style={titleContainerStyle}>
-      <img src="Images/jjs_it.png" alt="logo" style={logoStyle} />
+      <img src={props.img} alt="logo" style={logoStyle} />
       <Box style={nameContainerStyle}>
         <Typography variant='body1' style={titleH4Style}>JUNAID & JAWAD</Typography>
         <Typography variant="caption" style={titleH6Style}> CONSULTANCY </Typography>
