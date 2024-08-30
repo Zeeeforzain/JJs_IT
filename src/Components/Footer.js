@@ -165,8 +165,8 @@ export default function Footer() {
       <Box
         display={"flex"}
         alignItems={"center"}
-        justifyContent={"space-around"}
-        width={{ xs: "95%", md: "80%" }}
+        justifyContent={"center"}
+        width={{ xs: "100%", md: "100%" }}
         flexDirection={{ xs: "column", md: "row" }}
         textAlign={{ xs: "center" }}
       >
@@ -184,7 +184,7 @@ export default function Footer() {
             JJs IT
           </Typography>
         </Typography>
-        <List sx={{ display: "flex" }}>
+        {/* <List sx={{ display: "flex" }}>
           <ListItem>
             <FacebookOutlinedIcon sx={{ color: "white", cursor: "pointer" }} />
           </ListItem>
@@ -196,7 +196,7 @@ export default function Footer() {
               sx={{ color: "white", cursor: "pointer" }}
             />{" "}
           </ListItem>
-        </List>
+        </List> */}
       </Box>
     </Box>
   );
