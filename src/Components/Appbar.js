@@ -138,7 +138,7 @@ function Appbar(props) {
             }}
           /></Box>
 
-          <Box sx={{ display: { xs: "none", sm: "block" }, width: "30%" }}>
+          <Box sx={{ display: { xs: "none", sm: "block" }, width: "32%" }}>
             {navItems.map((item, index) => (
               <Button
                 key={index}
