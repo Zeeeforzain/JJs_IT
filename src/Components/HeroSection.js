@@ -1,7 +1,7 @@
 import { Box, Typography, Button } from "@mui/material";
 import React from "react";
 import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 export default function HeroSection() {
   const navigate = useNavigate();
   return (
@@ -19,30 +19,34 @@ export default function HeroSection() {
           fontSize: { xs: "1.75rem", md: "3.75rem" },
         }}
       >
-        Redefining Mobile And Web Application Development Solutions
+        Transforming Mobile and Web App Development Services
       </Typography>
       <Typography
         variant="h6"
         sx={{ color: "white", marginTop: "20px", marginBottom: "20px" }}
       >
-        A Web and Mobile Application Company specializing in business solution
-        that help business improve their processes.
+        Company focused on crafting business solutions that optimize and elevate
+        business operations.
       </Typography>
-     <Box
-     width={'138px'}
-     height={'6vh'}
-    
-     > <Button onClick={()=>{navigate("/ContactForm")}}
-  variant="contained"
-  color="primary"
-  sx={{
-    "&:hover": {
-      width: "140px",
-      height: "7vh",
-      transition: "width 0.6s ease-out, height 0.6s ease-out",
-    },}}
-> Let's Talk <ArrowRightRoundedIcon fontSize="medium" />
-      </Button>
+      <Box width={"138px"} height={"6vh"}>
+        {" "}
+        <Button
+          onClick={() => {
+            navigate("/ContactForm");
+          }}
+          variant="contained"
+          color="primary"
+          sx={{
+            "&:hover": {
+              width: "140px",
+              height: "7vh",
+              transition: "width 0.6s ease-out, height 0.6s ease-out",
+            },
+          }}
+        >
+          {" "}
+          Let's Talk <ArrowRightRoundedIcon fontSize="medium" />
+        </Button>
       </Box>
       {/* <Box
         display={"flex"}
@@ -86,6 +90,6 @@ export default function HeroSection() {
             alt="logo"
           />
         </Box> */}
-      </Box>
+    </Box>
   );
 }

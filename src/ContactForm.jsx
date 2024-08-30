@@ -5,11 +5,12 @@ import Adress from "./Components/Adress";
 import Form from "./Components/Form";
 import { Box, Typography } from "@mui/material";
 export default function ContactForm() {
+  
   return (
     <Box className="contactForm">
       <Box
       sx={{
-      backgroundImage: 'url(/Images/Home.png)',
+      backgroundImage: 'url(/Images/bg2.png)',
       backgroundSize:'100% 100%', 
       backgroundRepeat: 'no-repeat',
       backgroundPosition:'center',}}

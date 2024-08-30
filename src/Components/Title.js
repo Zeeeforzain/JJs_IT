@@ -9,7 +9,7 @@ const Title = (props) => {
     width: '235px',
     justifyContent: 'center',
     alignItems: 'center',
-    margin: '15px',
+    margin: '10px 15px 10px 15px',
     cursor: 'pointer',
   };
 
@@ -21,13 +21,13 @@ const Title = (props) => {
   };
 
   const logoStyle = {
-    width: '60px',
+    width: '50px',
     height: 'auto',
   };
 
   const titleH6Style = {
-    letterSpacing: '6px',
-    fontWeight: '500',
+    letterSpacing: '3px',
+    fontWeight: '400',
     color: props.color,
   };
 
@@ -40,7 +40,7 @@ const Title = (props) => {
     <Box style={titleContainerStyle}>
       <img src="Images/jjs_it.png" alt="logo" style={logoStyle} />
       <Box style={nameContainerStyle}>
-        <Typography variant='h6' style={titleH4Style}>JUNAID & JAWAD</Typography>
+        <Typography variant='body1' style={titleH4Style}>JUNAID & JAWAD</Typography>
         <Typography variant="caption" style={titleH6Style}> CONSULTANCY </Typography>
       </Box>
     </Box>

@@ -1,24 +1,24 @@
-import * as React from "react";
-import PropTypes from "prop-types";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Toolbar from "@mui/material/Toolbar";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import MenuIcon from "@mui/icons-material/Menu";
-import Button from "@mui/material/Button";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
-import { useNavigate } from "react-router-dom";
-import Title from "./Title";
+import React from 'react';
+import PropTypes from 'prop-types';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import CssBaseline from '@mui/material/CssBaseline';
+import Toolbar from '@mui/material/Toolbar';
+import Divider from '@mui/material/Divider';
+import Drawer from '@mui/material/Drawer';
+import IconButton from '@mui/material/IconButton';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import MenuIcon from '@mui/icons-material/Menu';
+import Button from '@mui/material/Button';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
+import { useNavigate } from 'react-router-dom';
+import Title from './Title';
 
 const drawerWidth = 260;
 const navItems = [
-  { label: "Home", path: "/Home" },
-  { label: "Services", path: "/Tools" },
+  { label: "Home", path: "/" },
+  { label: "Services", path: "/#tools" },
   {
     label: (
       <Button
@@ -50,7 +50,17 @@ function Appbar(props) {
   };
 
   const handleNavClick = (path) => {
-    navigate(path);
+    if (path === "/#tools") {
+      navigate('/');
+      setTimeout(() => {
+        const toolsSection = document.getElementById('tools');
+        if (toolsSection) {
+          toolsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      navigate(path);
+    }
   };
 
   const trigger = useScrollTrigger({
@@ -127,7 +137,7 @@ function Appbar(props) {
             {navItems.map((item, index) => (
               <Button
                 key={index}
-                onClick={() => item.path && handleNavClick(item.path)}
+                onClick={() => handleNavClick(item.path)}
                 sx={{
                   color: scrolling ? "black" : "white",
                   mx: 2,
@@ -147,7 +157,7 @@ function Appbar(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true, 
           }}
           sx={{
             display: { xs: "block", sm: "none" },
