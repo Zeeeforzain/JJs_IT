@@ -1,7 +1,6 @@
 import React from "react";
 import Appbar from "./Components/Appbar";
 import Box from "@mui/material/Box";
-import "./Home.css";
 import HeroSection from "./Components/HeroSection";
 import Services from "./Components/Services";
 import Tools from "./Components/Tools";
@@ -13,8 +12,16 @@ import Swiper from './Components/Swiper';
 export default function Home() {
   return (
     <Box className="home">
+     <Box
+       sx={{
+        backgroundImage: 'url(/Images/bg1.png)',
+        backgroundSize:'100% 100%', 
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition:'center',}}
+        >
       <Appbar />
       <HeroSection />
+      </Box>
       <Services />
       <Swiper />
       <Box id="tools">
