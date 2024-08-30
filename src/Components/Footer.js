@@ -53,7 +53,8 @@ export default function Footer() {
       </Box>
       <Box
         display={"flex"}
-        alignItems={"center"}
+        height={'auto'}
+        alignItems={"start"}
         justifyContent={"space-around"}
         borderBottom={"1px solid white"}
         padding={{ xs: "5px", md: "20px" }}
@@ -61,7 +62,7 @@ export default function Footer() {
       >
         <Box
           width={{ xs: "100%", md: "25%" }}
-          height={"45vh"}
+          height={'auto'}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"left"}
@@ -112,7 +113,7 @@ export default function Footer() {
         </Box>
         <Box
           width={{ xs: "100%", md: "25%" }}
-          height={"38vh"}
+          height={'auto'}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"left"}
@@ -167,14 +168,16 @@ export default function Footer() {
         </Box>
         <Box
           width={{ xs: "100%", md: "20%" }}
-          height={"45vh"}
+          height={'auto'}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"left"}
           justifyContent={"space-around"}
         >
           <List sx={{ color: "white", fontWeight: "500" }}>
-            <Typography variant="h5">Our Blogs</Typography>
+            <Typography variant="h5"
+          
+            >Our Blogs</Typography>
             <ListItem
               sx={{
                 "&:hover": { textDecoration: "Underline", cursor: "pointer" },

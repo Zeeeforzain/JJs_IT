@@ -10,7 +10,7 @@ export default function ContactForm() {
     <Box className="contactForm">
       <Box
       sx={{
-      backgroundImage: 'url(/Images/bg2.png)',
+      backgroundImage: 'url(/Images/bg1.png)',
       backgroundSize:'100% 100%', 
       backgroundRepeat: 'no-repeat',
       backgroundPosition:'center',}}
