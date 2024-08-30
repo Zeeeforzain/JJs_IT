@@ -173,6 +173,7 @@ export default function Footer() {
         width={{ xs: "100%", md: "100%" }}
         flexDirection={{ xs: "column", md: "row" }}
         textAlign={{ xs: "center" }}
+        padding={'8px'}
       >
         <Typography variant="body1" color={"white"} fontWeight={"500"}>
           Copyright © 2024 JJs. All Rights Reserved by{" "}
