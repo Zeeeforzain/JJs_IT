@@ -21,16 +21,17 @@ export default function Casestudies() {
           <Typography
             sx={{
               marginTop:'10px',
-              fontSize: { xs: "0.98rem", md: "1.15rem" },
+              fontSize: { xs: "27px", md: "1.25rem" },
               fontWeight: "700",
               color: "black",
+              fontFamily:'Inter, sans-serif'
             }}
             >
             MyGroser
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "0.8rem", md: "1rem" },
+              fontSize: { xs: "1rem", md: "1.05rem" },
               marginTop:'10px',
               color: "#616B7E",
             }}

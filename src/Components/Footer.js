@@ -14,8 +14,8 @@ export default function Footer() {
       <Box
         display={"flex"}
         flexDirection={{ xs: "column", md: "row" }}
-        justifyContent={{ xs: "center", md: "space-between" }}
-        alignItems={"left"}
+        justifyContent={{ xs: "left", md: "space-between" }}
+        alignItems={{xs:'left',md:"center"}}
         height={{ xs: "auto", md: "30vh" }}
         padding={{ xs: "5px", md: "50px 80px" }}
         borderBottom={"1px solid white"}
@@ -23,11 +23,12 @@ export default function Footer() {
         <Typography
           variant="h3"
           sx={{
-            fontSize: { xs: "1.3rem", md: "2.5rem" },
+            fontSize: { xs: "1.3rem", md: "2.6rem" },
             width: { xs: "70%", md: "65%" },
             fontWeight: "700",
             color: "white",
             margin: "10px 20px",
+            lineHeight:{xs:'40px', md:'63px',}
           }}
         >
           We Deliver The Best Customer Experience

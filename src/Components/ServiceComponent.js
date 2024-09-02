@@ -25,7 +25,7 @@ export default function ServiceComponent(props) {
       <Typography
         variant="subtitle1"
         sx={{
-          fontSize: { xs: "0.95rem", md: "1rem" },
+          fontSize: { xs: "0.95rem", md: "1.05rem" },
           fontFamily: "helvetica",
           color: "#616B7E",
         }}

@@ -17,6 +17,10 @@ export default function HeroSection() {
           fontWeight: "700",
           color: "white",
           fontSize: { xs: "1.75rem", md: "3.75rem" },
+          fontFamily:'Eudoxus Sans - 700'
+
+
+
         }}
       >
         Transforming Mobile and Web App Development Services
