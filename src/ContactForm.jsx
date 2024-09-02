@@ -47,7 +47,7 @@ export default function ContactForm() {
           </Typography>
           <Typography
             variant="h6"
-            sx={{ color: "white", marginTop: "20px", marginBottom: "20px" }}
+            sx={{fontSize: { xs: "1rem", md: "2.75rem" }, color: "white", marginTop: "20px", marginBottom: "20px" }}
           >
            Let us assist you with all your business development queries.
           </Typography>
