@@ -41,19 +41,24 @@ export default function Footer() {
             width: { xs: "50%", md: "auto" },
             color: "black",
             textTransform: "none",
+            fontFamily: "helvetica",
             margin: "10px 20px",
             borderRadius: "10px",
-            fontFamily: "helvetica",
             fontSize: "15px",
-            '&:hover':{color:'white'}
+            "&:hover": { color: "white" },
           }}
         >
-          Let's Get Started <ArrowRightRoundedIcon xs={{fontSize:{xs:'small', md:'large'}}} />
+          Let's Get Started{" "}
+          <ArrowRightRoundedIcon
+            xs={{
+              fontSize: { xs: "small", md: "large" },
+            }}
+          />
         </Button>
       </Box>
       <Box
         display={"flex"}
-        height={'auto'}
+        height={"auto"}
         alignItems={"start"}
         justifyContent={"space-around"}
         borderBottom={"1px solid white"}
@@ -62,20 +67,16 @@ export default function Footer() {
       >
         <Box
           width={{ xs: "100%", md: "25%" }}
-          height={'auto'}
+          height={"auto"}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"left"}
           justifyContent={"space-around"}
           borderBottom={{ xs: "1px solid white", md: "none" }}
-        ><Box
-        margin={"10px 0px 10px 10px"}
         >
-          <Title 
-          img="Images/jjs_it2.png"
-          color="white" 
-          width='30px'
-          /></Box>
+          <Box margin={"10px 0px 10px 10px"}>
+            <Title img="Images/jjs_it2.png" color="white" width="30px" />
+          </Box>
           <Typography
             varient="body1"
             width={"100%"}
@@ -119,7 +120,7 @@ export default function Footer() {
         </Box>
         <Box
           width={{ xs: "100%", md: "25%" }}
-          height={'auto'}
+          height={"auto"}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"left"}
@@ -164,7 +165,6 @@ export default function Footer() {
             </ListItem>
           </List>
         </Box>
-       
       </Box>
       <Box
         display={"flex"}
@@ -173,7 +173,7 @@ export default function Footer() {
         width={{ xs: "100%", md: "100%" }}
         flexDirection={{ xs: "column", md: "row" }}
         textAlign={{ xs: "center" }}
-        padding={'8px'}
+        padding={"8px"}
       >
         <Typography variant="body1" color={"white"} fontWeight={"500"}>
           Copyright © 2024 JJs. All Rights Reserved by{" "}

@@ -37,6 +37,8 @@ export default function HeroSection() {
           variant="contained"
           color="primary"
           sx={{
+            textTransform: "none",
+            fontFamily: "helvetica",
             "&:hover": {
               width: "140px",
               height: "7vh",

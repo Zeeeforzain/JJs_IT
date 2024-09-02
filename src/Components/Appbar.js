@@ -25,6 +25,8 @@ const navItems = [
         variant="contained"
         color="primary"
         sx={{
+          textTransform: "none",
+            fontFamily: "helvetica",
           "&:hover": {
             width: "130px",
             height: "7vh",
@@ -107,6 +109,7 @@ function Appbar(props) {
         component="nav"
         sx={{
           position: "fixed",
+          top:'0',
           backgroundColor: scrolling ? "white" : "transparent",
           color: scrolling ? "black" : "white",
           width: { xs: "100%", md: "100%" },
