@@ -78,7 +78,7 @@ const Swiper = () => {
             key={index}
             sx={{
               minWidth: "100%",
-              height: {xs:'80vh', md:'70vh'},
+              height: {xs:'auto', md:'auto'},
               backgroundImage: `url(${slide.image})`,
               backgroundSize: "cover",
               backgroundPosition: "center",

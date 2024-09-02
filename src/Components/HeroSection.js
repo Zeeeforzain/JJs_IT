@@ -7,9 +7,9 @@ export default function HeroSection() {
   return (
     <Box
       className="box"
-      width={{ xs: "100%", md: "60%" }}
-      height={{xs:'auto',md:"80vh"}}
-      margin={{ xs: "15px 20px 20px 15px", md: "20px 20% 10px 100px" }}
+      width={{ xs: "80%", md: "60%" }}
+      height={{ xs: "auto", md: "80vh" }}
+      margin={{ xs: "5px 20px 20px 15px", md: "20px 20% 10px 70px" }}
     >
       <Typography
         variant="h2"
@@ -23,12 +23,17 @@ export default function HeroSection() {
       </Typography>
       <Typography
         variant="h6"
-        sx={{ color: "white", marginTop: "20px", marginBottom: "20px" }}
+        sx={{
+          color: "white",
+          marginTop: {xs:'10px', md:'20px'},
+          marginBottom: "20px",
+          fontSize: { xs: "0.9rem", md: "1.25rem" },
+        }}
       >
         Company focused on crafting business solutions that optimize and elevate
         business operations.
       </Typography>
-      <Box width={"138px"} height={"6vh"}>
+      <Box width={"150px"} height={"8vh"}>
         {" "}
         <Button
           onClick={() => {
@@ -39,15 +44,21 @@ export default function HeroSection() {
           sx={{
             textTransform: "none",
             fontFamily: "helvetica",
+            padding: "10px 20px",
+            borderRadius: "5px",
+            width: "140px",
+            height: "7vh",
+            marginBottom:'15px',
+            justifyContent: "space-around",
+            transition: "width 0.3s ease-out, height 0.3s ease-out",
             "&:hover": {
-              width: "140px",
-              height: "7vh",
-              transition: "width 0.6s ease-out, height 0.6s ease-out",
+              width: "150px",
+              height: "8vh",
             },
           }}
         >
           {" "}
-          Let's Talk <ArrowRightRoundedIcon fontSize="medium" />
+          Let's Talk <ArrowRightRoundedIcon fontSize="large" />
         </Button>
       </Box>
       {/* <Box

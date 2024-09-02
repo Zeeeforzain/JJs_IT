@@ -4,10 +4,10 @@ import ServiceComponent from "./ServiceComponent";
 import Headings from "./Headings";
 export default function Services() {
   return (
-    <Box margin={{ xs: "10px 10px", md: "40px 80px" }}>
+    <Box margin={{ xs: "50px 15px", md: "40px 80px" }}>
       <Headings
         titleVariant="h3"
-        descVariant="h6"
+        descVariant="body1"
         title="What Can We Do For You?"
         description="A Web and Mobile application Development Company specializing in
           Digital Automation for small and medium businesses."
@@ -16,14 +16,9 @@ export default function Services() {
         display={{ xs: "block", sm: "flex" }}
         flexDirection={{ xs: "column", sm: "row" }}
         justifyContent="space-between"
-        marginTop="10px"
+        marginTop="35px"
         alignItems="start"
       >
-        <ServiceComponent
-          img="Images/UX.svg"
-          title="Ideation and Design Services"
-          description="Looking for a straightforward yet impactful experience? JJs IT is here to offer you exceptional product ideation and design services, all with a top-notch UX approach. Reach out to us today and enjoy the finest web and app development experience."
-        />
         <ServiceComponent
           img="Images/App.svg"
           title="Mobile App Development"
@@ -33,6 +28,11 @@ export default function Services() {
           img="Images/Web.svg"
           title="Web Development Services"
           description="From bespoke web development to content management solutions, JJs IT provides top-tier web development services, including headless CMS optimized for every search engine.'"
+        />
+        <ServiceComponent
+          img="Images/UX.svg"
+          title="UI/UX Services"
+          description="Looking for a straightforward yet impactful experience? JJs IT is here to offer you exceptional product ideation and design services, all with a top-notch UX approach. Reach out to us today and enjoy the finest web and app development experience."
         />
       </Box>
       <Box

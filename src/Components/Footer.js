@@ -14,7 +14,7 @@ export default function Footer() {
       <Box
         display={"flex"}
         flexDirection={{ xs: "column", md: "row" }}
-        justifyContent={{ xs: "left", md: "space-between" }}
+        justifyContent={{ xs: "center", md: "space-between" }}
         alignItems={"left"}
         height={{ xs: "auto", md: "30vh" }}
         padding={{ xs: "5px", md: "50px 80px" }}
@@ -60,9 +60,9 @@ export default function Footer() {
         display={"flex"}
         height={"auto"}
         alignItems={"start"}
-        justifyContent={"space-around"}
+        justifyContent={"space-between"}
         borderBottom={"1px solid white"}
-        padding={{ xs: "5px", md: "20px" }}
+        padding={{ xs: "5px", md: "20px 80px" }}
         flexDirection={{ xs: "column", md: "row" }}
       >
         <Box

@@ -21,21 +21,31 @@ const navItems = [
   { label: "Services", path: "/#tools" },
   {
     label: (
+      <Box
+      sx={{
+        height:'8vh',
+        width:'140px'
+      }}>
       <Button
-        variant="contained"
-        color="primary"
-        sx={{
-          textTransform: "none",
-            fontFamily: "helvetica",
-          "&:hover": {
-            width: "130px",
-            height: "7vh",
-            transition: "0.5s ease-out",
-          },
-        }}
-      >
-        Contact Us
-      </Button>
+      variant="contained"
+      color="primary"
+      sx={{
+        textTransform: "none",
+        fontFamily: "helvetica",
+        padding: '10px 20px',
+        borderRadius:'5px',
+        width: '130px', 
+        height: '7vh', 
+        transition: "width 0.3s ease-out, height 0.3s ease-out", 
+        "&:hover": {
+          width: "140px",
+          height: "8vh",
+        },
+      }}
+    >
+      Contact Us
+    </Button></Box>
+    
     ),
     path: "/ContactForm",
   },
@@ -49,6 +59,7 @@ function Appbar(props) {
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+   
   };
 
   const handleNavClick = (path) => {
@@ -76,13 +87,14 @@ function Appbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Box
-      margin={"10px 0px 10px 10px"}
-      ><Title img="Images/jjs_it.png" width='50px' /></Box>
+      <Box margin={"10px 0px 10px 10px"}
+      >
+        <Title img="Images/jjs_it.png" width='50px' />
+      </Box>
       <Divider />
       <List>
         {navItems.map((item, index) => (
-            <ListItem
+          <ListItem
             key={index}
             onClick={() => item.path && handleNavClick(item.path)}
             sx={{ 
@@ -99,8 +111,7 @@ function Appbar(props) {
     </Box>
   );
 
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
+  const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: "flex", justifyContent: "start" }}>
@@ -109,14 +120,16 @@ function Appbar(props) {
         component="nav"
         sx={{
           position: "fixed",
-          top:'0',
+          top: 0,
+          left: 0,
+          right: 0,
           backgroundColor: scrolling ? "white" : "transparent",
           color: scrolling ? "black" : "white",
-          width: { xs: "100%", md: "100%" },
+          width: "100%",
           display: "flex",
           justifyContent: "center",
           boxShadow: scrolling ? 1 : 0,
-          transition: "background-color 0.3s ease, color 0.3s ease",
+          transition: "background-color 0.5s ease, color 0.5s ease",
         }}
       >
         <Toolbar
@@ -134,19 +147,17 @@ function Appbar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Box
-      margin={"10px 0px 10px 0px"}
-      >
-          <Title img="Images/jjs_it.png" width='50px'
-            sx={{
-              display: { xs: "block", sm: "block" },
-              flexGrow: 0,
-              ml: { xs: 0, sm: 2 },
-              textAlign: { xs: "left", sm: "inherit" },
-            }}
-          /></Box>
-
-          <Box sx={{ display: { xs: "none", sm: "block" }, width: "32%" }}>
+          <Box margin={{xs:'10px 0px 10px 0px',md:"10px 0px 10px 50px"}}>
+            <Title img="Images/jjs_it.png" width='50px'
+              sx={{
+                display: { xs: "block", sm: "block" },
+                flexGrow: 0,
+                ml: { xs: 0, sm: 2 },
+                textAlign: { xs: "left", sm: "inherit" },
+              }}
+            />
+          </Box>
+          <Box sx={{ display: { xs: "none", sm: "block" }, width: "auto" }}>
             {navItems.map((item, index) => (
               <Button
                 key={index}
@@ -154,7 +165,10 @@ function Appbar(props) {
                 sx={{
                   color: scrolling ? "black" : "white",
                   mx: 2,
-                  fontWeight: "700",
+                  fontSize:'15px',
+                  fontWeight: "500",
+                  textTransform:'none',
+                  fontFamily:'helvetica',
                 }}
               >
                 {item.label}
