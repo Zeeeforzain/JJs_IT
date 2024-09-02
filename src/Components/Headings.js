@@ -20,7 +20,7 @@ export default function Headings(props) {
         variant={props.descVariant}
         sx={{ 
           marginTop:'5px',
-          fontSize: { xs: "0.97rem", md: "1rem" }, color: "#616B7E" }}
+          fontSize: { xs: "0.9rem", md: "1rem" }, color: "#616B7E", fontWeight:'normal' }}
       >
         {props.description}
       </Typography>
