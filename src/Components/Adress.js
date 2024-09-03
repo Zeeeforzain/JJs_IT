@@ -1,10 +1,11 @@
-import { Box, Typography } from "@mui/material";
 import React from "react";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import MarkunreadOutlinedIcon from "@mui/icons-material/MarkunreadOutlined";
+import BoxComponent from "./Box";
+import TypographyComponent from "./Typography";
 export default function Adress(props) {
   return (
-    <Box
+    <BoxComponent
       width={{xs:'100%',md:"24%"}}
       height={"25vh"}
       display={"flex"}
@@ -13,17 +14,17 @@ export default function Adress(props) {
       boxShadow={"0px 2px 5px 2px #e6ebe7"}
       padding={"15px"}
     >
-      <Typography variant="h6" fontWeight={"700"}>
+      <TypographyComponent variant="h6" fontWeight={"700"} sx={{fontFamily:'var(--basic)'}} >
         {props.title}
-      </Typography>
-      <Box display={"flex"} alignItems={"center"}>
+      </TypographyComponent  >
+      <BoxComponent display={"flex"} alignItems={"center"}>
         <FmdGoodOutlinedIcon fontSize="small" color="primary" />
-        <Typography variant="caption" marginLeft={'5px'}>{props.address}</Typography>
-      </Box>
-      <Box display={"flex"} alignItems={"center"}>
+        <TypographyComponent variant="caption" marginLeft={'5px'}>{props.address}</TypographyComponent>
+      </BoxComponent>
+      <BoxComponent display={"flex"} alignItems={"center"}>
         <MarkunreadOutlinedIcon fontSize="small" color="primary" />
-        <Typography variant="caption" marginLeft={'5px'}>{props.email}</Typography>
-      </Box>
-    </Box>
+        <TypographyComponent variant="caption" marginLeft={'5px'}sx={{fontFamily:'var(--main)'}} >{props.email}</TypographyComponent>
+      </BoxComponent>
+    </BoxComponent>
   );
 }

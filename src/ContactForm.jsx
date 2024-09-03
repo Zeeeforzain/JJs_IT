@@ -3,13 +3,15 @@ import Appbar from "./Components/Appbar";
 import Footer from "./Components/Footer";
 import Adress from "./Components/Adress";
 import Form from "./Components/Form";
-import { Box, Typography } from "@mui/material";
+import BoxComponent from "./Components/Box";
+import TypographyComponent from "./Components/Typography";
+
 
 export default function ContactForm() {
  
   return (
-    <Box className="contactForm">
-      <Box
+    <BoxComponent className="contactForm">
+      <BoxComponent
       sx={{
       backgroundImage: 'url(/Images/bg1.png)',
       backgroundSize:'100% 100%', 
@@ -17,7 +19,7 @@ export default function ContactForm() {
       backgroundPosition:'center',}}
       >
       <Appbar />
-      <Box 
+      <BoxComponent 
       sx={{
         
         display: 'flex',
@@ -29,33 +31,34 @@ export default function ContactForm() {
         height:'auto'
       }}
       >
-        <Box
+        <BoxComponent
           className="box"
           overflow={'hidden'}
           width={{ xs: "80%", md: "40%" }}
           height={{xs:'30vh', md:'70vh'}}
         >
-          <Typography
+          <TypographyComponent
             variant="h4"
             sx={{
               fontWeight: "700",
-              color: "white",
+              color: "var(--light)",
+              fontFamily:'var(--main)',
               fontSize: { xs: "1.75rem", md: "2.75rem" },
             }}
           >
             Begin Your Digital Journey Today
-          </Typography>
-          <Typography
+          </TypographyComponent>
+          <TypographyComponent
             variant="h6"
-            sx={{fontSize: { xs: "1rem", md: "1.25rem" },fontWeight:'400', color: "white", marginTop: "20px", marginBottom: "20px" }}
+            sx={{fontSize: { xs: "1rem", md: "1.25rem" },fontWeight:'400', color: "var(--light)", marginTop: "20px", marginBottom: "20px", fontFamily:'var(--main)', }}
           >
            Let us assist you with all your business development queries.
-          </Typography>
-        </Box>
+          </TypographyComponent>
+        </BoxComponent>
             <Form/>
-      </Box>
-      </Box>
-      <Box 
+      </BoxComponent>
+      </BoxComponent>
+      <BoxComponent 
       margin={'40px 60px '}
       >
       <Adress
@@ -63,8 +66,8 @@ export default function ContactForm() {
       address="G11/4, Islamabad,Pakistan"
       email="jjit@gmail.com"
       />
-      </Box>
+      </BoxComponent>
       <Footer/>
-    </Box>
+    </BoxComponent>
   );
 }

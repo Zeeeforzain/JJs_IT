@@ -1,11 +1,12 @@
 import React from "react";
-import { Box, Button } from "@mui/material";
 import Headings from "./Headings";
 import TextField from "@mui/material/TextField";
 import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
+import BoxComponent from "./Box";
+import ButtonComponent from "./Button";
 export default function Form() {
   return (
-    <Box
+    <BoxComponent
       width={{ xs: "90%", md: "35%" }}
       height={"auto"}
       backgroundColor={"white"}
@@ -19,7 +20,7 @@ export default function Form() {
         description="We deliver powerful mobile and application development services that drive impactful results"
       />
 
-      <Box
+      <BoxComponent
         component="form"
         sx={{
           display: "flex",
@@ -32,8 +33,8 @@ export default function Form() {
       >
         <TextField id="standard-basic" label="First Name" variant="standard" />
         <TextField id="standard-basic" label="Last Name" variant="standard" />
-      </Box>
-      <Box
+      </BoxComponent>
+      <BoxComponent
         component="form"
         sx={{
           display: "flex",
@@ -46,7 +47,7 @@ export default function Form() {
       >
         <TextField id="standard-basic" label="Phone No" variant="standard" />
         <TextField id="standard-basic" label="Email" variant="standard" />
-      </Box>
+      </BoxComponent>
       <TextField
         fullWidth
         label="Message"
@@ -64,7 +65,7 @@ export default function Form() {
           },
         }}
       />
-     <Box
+     <BoxComponent
   sx={{ 
     display:'flex',
     
@@ -72,16 +73,17 @@ export default function Form() {
         alignItems:'center',
         marginTop:'15px'
   }}>
-  <Button
+  <ButtonComponent
     variant="contained"
-    color="primary"
+    color="var(--primary)"
     sx={{
         width:{xs:'100%',md:'30%'},
+        fontFamily:'var(--basic)',
     }}
   >
     Submit <ArrowRightRoundedIcon fontSize="large" />
-  </Button>
-</Box>
-</Box>
+  </ButtonComponent>
+</BoxComponent>
+</BoxComponent>
 );
 }

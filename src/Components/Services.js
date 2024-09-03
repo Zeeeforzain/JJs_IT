@@ -1,10 +1,10 @@
 import React from "react";
-import { Box } from "@mui/material";
 import ServiceComponent from "./ServiceComponent";
 import Headings from "./Headings";
+import BoxComponent from "./Box";
 export default function Services() {
   return (
-    <Box margin={{ xs: "50px 15px", md: "40px 80px" }}>
+    <BoxComponent margin={{ xs: "50px 15px", md: "40px 80px" }}>
       <Headings
         titleVariant="h3"
         descVariant="body1"
@@ -12,7 +12,7 @@ export default function Services() {
         description="A Web and Mobile application Development Company specializing in
           Digital Automation for small and medium businesses."
       />
-      <Box
+      <BoxComponent
         display={{ xs: "block", sm: "flex" }}
         flexDirection={{ xs: "column", sm: "row" }}
         justifyContent="space-between"
@@ -34,8 +34,8 @@ export default function Services() {
           title="UI/UX Services"
           description="Looking for a straightforward yet impactful experience? JJs IT is here to offer you exceptional product ideation and design services, all with a top-notch UX approach. Reach out to us today and enjoy the finest web and app development experience."
         />
-      </Box>
-      <Box
+      </BoxComponent>
+      <BoxComponent
         display={{ xs: "block", sm: "flex" }}
         flexDirection={{ xs: "column", sm: "row" }}
         justifyContent="space-around"
@@ -52,7 +52,7 @@ export default function Services() {
           title="Software Quality Assurance"
           description="Offering comprehensive software quality assurance services, I ensure that your software products meet the highest standards of reliability and performance. Through meticulous testing and analysis, I identify and address issues early, delivering a seamless and bug-free user experience."
         />
-      </Box>
-    </Box>
+      </BoxComponent>
+    </BoxComponent>
   );
 }

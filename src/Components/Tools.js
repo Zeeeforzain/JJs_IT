@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Headings from "./Headings";
 import Tech from "./Tech";
 import Software from "./Software";
-import { Box } from "@mui/material";
+import BoxComponent from "./Box";
 
 export default function Tools() {
   const [activeTech, setActiveTech] = useState(null);
@@ -12,19 +12,19 @@ export default function Tools() {
   };
 
   return (
-    <Box margin={{ xs: "50px 15px", md: "60px 80px" }}>
+    <BoxComponent margin={{ xs: "50px 15px", md: "60px 80px" }}>
       <Headings
         titleVariant="h3"
         descVariant="h6"
         title="Tools and Technologies We Work In!"
         description="Assuring to provide exceptional customer experience and drive meaningful insights using the digital world's best app development practices and technology"
       />
-      <Box
+      <BoxComponent
         display={"flex"}
         justifyContent={"space-between"}
         width={{ xs: "100%", md: "80%" }}
       >
-        <Box
+        <BoxComponent
           width={{ xs: "60%", md: "40%" }}
           display={"flex"}
           flexDirection={"column"}
@@ -65,8 +65,8 @@ export default function Tools() {
             isActive={activeTech === "Design"}
             onBoxClick={() => handleTechClick("Design")}
           />
-        </Box>
-        <Box
+        </BoxComponent>
+        <BoxComponent
           display={"flex"}
           flexDirection={{ xs: "row", md: "row" }}
           justifyContent={{ xs: "space-between", md: "space-around" }}
@@ -105,8 +105,8 @@ export default function Tools() {
           {activeTech === "Design" && (
             <Software img="Images/ui.png" name="UI & UX" />
           )}
-        </Box>
-      </Box>
-    </Box>
+        </BoxComponent>
+      </BoxComponent>
+    </BoxComponent>
   );
 }

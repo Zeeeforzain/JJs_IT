@@ -1,8 +1,9 @@
-import React from "react";
-import { Box, Typography, IconButton } from "@mui/material";
+import { React, useState } from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { useState } from "react";
+import BoxComponent from "./Box";
+import TypographyComponent from "./Typography";
+import { IconButton } from "@mui/material";
 
 const Swiper = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -57,7 +58,7 @@ const Swiper = () => {
   };
 
   return (
-    <Box
+    <BoxComponent
       sx={{
         position: "relative",
         width: "95%",
@@ -66,7 +67,7 @@ const Swiper = () => {
        
       }}
     >
-      <Box
+      <BoxComponent
         sx={{
           display: "flex",
           transform: `translateX(-${currentSlide * 100}%)`,
@@ -74,7 +75,7 @@ const Swiper = () => {
         }}
       >
         {slides.map((slide, index) => (
-          <Box
+          <BoxComponent
             key={index}
             sx={{
               minWidth: "100%",
@@ -91,56 +92,56 @@ const Swiper = () => {
               padding: "50px",
             }}
           >
-            <Typography
+            <TypographyComponent
               variant="h3"
-              sx={{ color: "white", marginBottom: "10px", fontWeight: "600" }}
+              sx={{fontFamily:'var(--main)', color: "var(--light)", marginBottom: "10px", fontWeight: "600" }}
             >
               {slide.title}
-            </Typography>
-            <Typography
+            </TypographyComponent>
+            <TypographyComponent
               variant="h6"
-              sx={{ color: "white", marginBottom: "20px" }}
+              sx={{fontFamily:'var(--main)', color: "var(--light)", marginBottom: "20px" }}
             >
               {slide.description}
-            </Typography>
-            <Typography
+            </TypographyComponent>
+            <TypographyComponent
               variant="body1"
-              sx={{ color: "white", marginBottom: "20px" }}
+              sx={{fontFamily:'var(--main)', color: "var(--light)", marginBottom: "20px" }}
             >
               {slide.msg}
-            </Typography>
-            <Box
+            </TypographyComponent>
+            <BoxComponent
               display={"flex"}
               alignItems={"center"}
               justifyContent={"left"}
             >
-              <Box
+              <BoxComponent
                 component="img"
                 src={slide.overlayImage}
                 alt="Overlay"
                 sx={{ width: "60px", height: "auto" }}
               />
-              <Box
+              <BoxComponent
                 display={"flex"}
                 flexDirection={"column"}
                 alignItems={"left"}
                 justifyContent={"center"}
                 margin={"10px 10px"}
               >
-                <Typography variant="body1" sx={{ color: "black" }}>
+                <TypographyComponent variant="body1" sx={{fontFamily:'var(--main)', color: "var(--dull)" }}>
                   {slide.name}
-                </Typography>
-                <Typography
+                </TypographyComponent>
+                <TypographyComponent
                   variant="body1"
-                  sx={{ color: "white", marginBottom: "20px" }}
+                  sx={{fontFamily:'var(--main)', color: "var(--light)", marginBottom: "20px" }}
                 >
                   {slide.des}
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
+                </TypographyComponent>
+              </BoxComponent>
+            </BoxComponent>
+          </BoxComponent>
         ))}
-      </Box>
+      </BoxComponent>
 
       <IconButton
         onClick={handlePrev}
@@ -171,7 +172,7 @@ const Swiper = () => {
         <ArrowForwardIosIcon />
       </IconButton>
 
-      <Box
+      <BoxComponent
         sx={{
           position: "absolute",
           bottom: "20px",
@@ -182,7 +183,7 @@ const Swiper = () => {
         }}
       >
         {slides.map((_, index) => (
-          <Box
+          <BoxComponent
             key={index}
             sx={{
               width: "30px",
@@ -194,8 +195,8 @@ const Swiper = () => {
             onClick={() => setCurrentSlide(index)}
           />
         ))}
-      </Box>
-    </Box>
+      </BoxComponent>
+    </BoxComponent>
   );
 };
 

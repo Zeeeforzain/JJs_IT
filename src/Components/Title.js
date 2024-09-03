@@ -1,7 +1,7 @@
 import React from 'react';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import { useNavigate } from 'react-router-dom';
+import BoxComponent from './Box';
+import TypographyComponent from './Typography';
 const Title = (props) => {
   const navigate = useNavigate();
   const titleContainerStyle = {
@@ -26,27 +26,28 @@ const Title = (props) => {
   };
 
   const titleH6Style = {
+    fontFamily:'var(--basic)',
     letterSpacing: '3px',
     fontWeight: '400',
     color: props.color,
   };
 
   const titleH4Style = {
+    fontFamily:'var(--basic)',
     fontWeight: 700,
     color: props.color,
   };
 
   return (
-    <Box     onClick={() => {
-      navigate("/");
-    }}
+    <BoxComponent
+    onClick={() => {navigate("/");}}
     style={titleContainerStyle}>
       <img src={props.img} alt="logo" style={logoStyle} />
-      <Box style={nameContainerStyle}>
-        <Typography variant='body1' style={titleH4Style}>JUNAID & JAWAD</Typography>
-        <Typography variant="caption" style={titleH6Style}> CONSULTANCY </Typography>
-      </Box>
-    </Box>
+      <BoxComponent style={nameContainerStyle}>
+        <TypographyComponent variant='body1' style={titleH4Style}>JUNAID & JAWAD</TypographyComponent>
+        <TypographyComponent variant="caption" style={titleH6Style}> CONSULTANCY </TypographyComponent>
+      </BoxComponent>
+    </BoxComponent>
   );
 }
 

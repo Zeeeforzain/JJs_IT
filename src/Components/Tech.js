@@ -1,11 +1,11 @@
-
-import { Box, Typography } from '@mui/material';
 import React from 'react';
 import ArrowRightRoundedIcon from '@mui/icons-material/ArrowRight';
+import BoxComponent from './Box';
+import TypographyComponent from './Typography';
 
 export default function Tech({ name, isActive, onBoxClick }) {
   return (
-    <Box
+    <BoxComponent
       marginBottom={'20px'}
       display={'flex'}
       justifyContent={'space-between'}
@@ -24,8 +24,9 @@ export default function Tech({ name, isActive, onBoxClick }) {
         },
       }}
     >
-      <Typography
+      <TypographyComponent
         sx={{
+          fontFamily:'var(--basic)',
           width: '100%',
           padding: {xs:'5px', md:'10px'},
           fontSize:{xs:'0.6rem', md:'1.3rem'}
@@ -33,9 +34,9 @@ export default function Tech({ name, isActive, onBoxClick }) {
         variant='h6'
       >
         {name}
-      </Typography>
+      </TypographyComponent>
       <ArrowRightRoundedIcon fontSize='large' />
-    </Box>
+    </BoxComponent>
   );
 }
 

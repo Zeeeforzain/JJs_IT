@@ -1,29 +1,32 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import TypographyComponent from "./Typography";
+import BoxComponent from "./Box";
 export default function Headings(props) {
   return (
-    <Box
+    <BoxComponent
       width={{ xs: "90%", md: "65%" }}
       marginBottom={{ xs: "15px", md: "15px" }}
     >
-      <Typography
+      <TypographyComponent
         variant={props.titleVariant}
         sx={{
           fontSize: { xs: "1.5rem", md: "42px" },
           fontWeight: "700",
-          color: "black",
+          color: "var(--dull)",
+          fontFamily:'var(--main)',
         }}
       >
         {props.title}
-      </Typography>
-      <Typography
+      </TypographyComponent>
+      <TypographyComponent
         variant={props.descVariant}
         sx={{ 
           marginTop:'5px',
+          fontFamily:'var(--main)',
           fontSize: { xs: "0.9rem", md: "17px" }, color: "#616B7E", fontWeight:'400' }}
       >
         {props.description}
-      </Typography>
-    </Box>
+      </TypographyComponent>
+    </BoxComponent>
   );
 }

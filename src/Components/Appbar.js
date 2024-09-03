@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
 import Divider from '@mui/material/Divider';
@@ -10,10 +9,11 @@ import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import MenuIcon from '@mui/icons-material/Menu';
-import Button from '@mui/material/Button';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { useNavigate } from 'react-router-dom';
 import Title from './Title';
+import ButtonComponent from './Button';
+import BoxComponent from './Box';
 
 const drawerWidth = 220;
 const navItems = [
@@ -21,17 +21,17 @@ const navItems = [
   { label: "Services", path: "/#tools" },
   {
     label: (
-      <Box
+      <BoxComponent
       sx={{
         height:'8vh',
         width:'140px'
       }}>
-      <Button
+      <ButtonComponent
       variant="contained"
-      color="primary"
+      color="var(--primary)"
       sx={{
         textTransform: "none",
-        fontFamily: "helvetica",
+         fontFamily:'var(--main)',
         padding: '10px 20px',
         borderRadius:'5px',
         width: '130px', 
@@ -44,7 +44,7 @@ const navItems = [
       }}
     >
       Contact Us
-    </Button></Box>
+    </ButtonComponent></BoxComponent>
     
     ),
     path: "/ContactForm",
@@ -86,11 +86,11 @@ function Appbar(props) {
   }, [trigger]);
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Box margin={"10px 0px 10px 10px"}
+    <BoxComponent onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+      <BoxComponent margin={"10px 0px 10px 10px"}
       >
         <Title img="Images/jjs_it.png" width='50px' />
-      </Box>
+      </BoxComponent>
       <Divider />
       <List>
         {navItems.map((item, index) => (
@@ -101,20 +101,21 @@ function Appbar(props) {
               cursor: item.path ? "pointer" : "default",
               justifyContent: "center",
               textAlign: "center",
-              width: "100%" 
+              width: "100%" ,
+              fontFamily:'var(--main)',
             }}
           >
             {item.label}
           </ListItem>
         ))}
       </List>
-    </Box>
+    </BoxComponent>
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "start" }}>
+    <BoxComponent sx={{ display: "flex", justifyContent: "start" }}>
       <CssBaseline />
       <AppBar
         component="nav"
@@ -123,8 +124,8 @@ function Appbar(props) {
           top: 0,
           left: 0,
           right: 0,
-          backgroundColor: scrolling ? "white" : "transparent",
-          color: scrolling ? "black" : "white",
+          backgroundColor: scrolling ? "var(--light)" : "transparent",
+          color: scrolling ? "var(--dull)" : "var(--light)",
           width: "100%",
           display: "flex",
           justifyContent: "center",
@@ -147,7 +148,7 @@ function Appbar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Box margin={{xs:'10px 0px 10px 0px',md:"10px 0px 10px 50px"}}>
+          <BoxComponent margin={{xs:'10px 0px 10px 0px',md:"10px 0px 10px 50px"}}>
             <Title img="Images/jjs_it.png" width='50px'
               sx={{
                 display: { xs: "block", sm: "block" },
@@ -156,25 +157,25 @@ function Appbar(props) {
                 textAlign: { xs: "left", sm: "inherit" },
               }}
             />
-          </Box>
-          <Box sx={{ display: { xs: "none", sm: "block" }, width: "auto" }}>
+          </BoxComponent>
+          <BoxComponent sx={{ display: { xs: "none", sm: "block" }, width: "auto" }}>
             {navItems.map((item, index) => (
-              <Button
+              <ButtonComponent
                 key={index}
                 onClick={() => handleNavClick(item.path)}
                 sx={{
-                  color: scrolling ? "black" : "white",
+                  color: scrolling ? "var(--dull)" : "var(--light)",
                   mx: 2,
                   fontSize:'15px',
                   fontWeight: "500",
                   textTransform:'none',
-                  fontFamily:'helvetica',
+                   fontFamily:'var(--main)'
                 }}
               >
                 {item.label}
-              </Button>
+              </ButtonComponent>
             ))}
-          </Box>
+          </BoxComponent>
         </Toolbar>
       </AppBar>
       <nav>
@@ -197,10 +198,10 @@ function Appbar(props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 3 }}>
+      <BoxComponent component="main" sx={{ p: 3 }}>
         <Toolbar />
-      </Box>
-    </Box>
+      </BoxComponent>
+    </BoxComponent>
   );
 }
 

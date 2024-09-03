@@ -1,17 +1,17 @@
-import { Box, Typography, Button, List, ListItem } from "@mui/material";
+import {List, ListItem } from "@mui/material";
 import Title from "./Title";
 import React from "react";
 import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
 import { useNavigate } from "react-router-dom";
+import BoxComponent from "./Box";
+import TypographyComponent from "./Typography";
+import ButtonComponent from "./Button";
 export default function Footer() {
   const navigate = useNavigate();
   return (
-    <Box sx={{ backgroundColor: "#004cb2" }}>
-      <Box
+    <BoxComponent sx={{ backgroundColor: "#004cb2" }}>
+      <BoxComponent
         display={"flex"}
         flexDirection={{ xs: "column", md: "row" }}
         justifyContent={{ xs: "left", md: "space-between" }}
@@ -20,33 +20,39 @@ export default function Footer() {
         padding={{ xs: "5px", md: "50px 80px" }}
         borderBottom={"1px solid white"}
       >
-        <Typography
+        <TypographyComponent
           variant="h3"
           sx={{
             fontSize: { xs: "1.3rem", md: "2.6rem" },
             width: { xs: "70%", md: "65%" },
             fontWeight: "700",
-            color: "white",
+            color: "var(--light)",
+          fontFamily:'var(--main)',
             margin: "10px 20px",
             lineHeight:{xs:'40px', md:'63px',}
           }}
         >
           We Deliver The Best Customer Experience
-        </Typography>
+        </TypographyComponent>
 
-        <Button
+        <ButtonComponent
           onClick={() => navigate("/ContactForm")}
           variant="contained"
+          color="var(--light)"
           sx={{
-            backgroundColor: "white",
             width: { xs: "50%", md: "auto" },
-            color: "black",
+            height:'auto',
             textTransform: "none",
-            fontFamily: "helvetica",
+            fontFamily:'var(--main)',
             margin: "10px 20px",
             borderRadius: "10px",
             fontSize: "15px",
-            "&:hover": { color: "white" },
+            color:"var(--dark)",
+            transition: "width 0.4s ease-out, height 0.4s ease-out", 
+            "&:hover": {
+              width: "180px",
+              height: "7vh",
+            },
           }}
         >
           Let's Get Started{" "}
@@ -55,9 +61,9 @@ export default function Footer() {
               fontSize: { xs: "small", md: "large" },
             }}
           />
-        </Button>
-      </Box>
-      <Box
+        </ButtonComponent>
+      </BoxComponent>
+      <BoxComponent
         display={"flex"}
         height={"auto"}
         alignItems={"start"}
@@ -66,7 +72,7 @@ export default function Footer() {
         padding={{ xs: "5px", md: "20px 80px" }}
         flexDirection={{ xs: "column", md: "row" }}
       >
-        <Box
+        <BoxComponent
           width={{ xs: "100%", md: "25%" }}
           height={"auto"}
           display={"flex"}
@@ -75,19 +81,20 @@ export default function Footer() {
           justifyContent={"space-around"}
           borderBottom={{ xs: "1px solid white", md: "none" }}
         >
-          <Box margin={"10px 0px 10px 10px"}>
-            <Title img="Images/jjs_it2.png" color="white" width="30px" />
-          </Box>
-          <Typography
+          <BoxComponent margin={"10px 0px 10px 10px"}>
+            <Title img="Images/jjs_it2.png" color="var(--light)" width="30px"/>
+          </BoxComponent>
+          <TypographyComponent
             varient="body1"
             width={"100%"}
             margin={"10px 20px 10px 20px"}
             color={"white"}
             fontWeight={"500"}
+             fontFamily='var(--main)'
           >
             JJs IT offers full-stack mobile and development services
-          </Typography>
-          <Box
+          </TypographyComponent>
+          <BoxComponent
             display={"flex"}
             justifyContent={"left"}
             alignItems={"center"}
@@ -101,11 +108,11 @@ export default function Footer() {
               width={"30px"}
               height={"auto"}
             />
-            <Typography variant="body1" marginLeft={"10px"} fontWeight={"500"}>
+            <TypographyComponent variant="body1" marginLeft={"10px"} fontWeight={"500"}  fontFamily='var(--main)'>
               +92 345 5276648
-            </Typography>
-          </Box>
-          <Box
+            </TypographyComponent>
+          </BoxComponent>
+          <BoxComponent
             display={"flex"}
             justifyContent={"left"}
             alignItems={"center"}
@@ -114,12 +121,12 @@ export default function Footer() {
             color={"white"}
           >
             <LocationOnOutlinedIcon fontSize="medium" sx={{ color: "white" }} />
-            <Typography variant="body1" marginLeft={"10px"} fontWeight={"500"}>
+            <TypographyComponent variant="body1" marginLeft={"10px"} fontWeight={"500"}  fontFamily='var(--main)'>
               Floor 3, Office No. 6, G-11/4 Islamabad, Pakistan
-            </Typography>
-          </Box>
-        </Box>
-        <Box
+            </TypographyComponent>
+          </BoxComponent>
+        </BoxComponent>
+        <BoxComponent
           width={{ xs: "100%", md: "25%" }}
           height={"auto"}
           display={"flex"}
@@ -128,7 +135,7 @@ export default function Footer() {
           justifyContent={"space-around"}
         >
           <List sx={{ color: "white", fontWeight: "500" }}>
-            <Typography variant="h5">Quick Links</Typography>
+            <TypographyComponent variant="h5"  fontFamily='var(--basic)'>Quick Links</TypographyComponent>
             <ListItem
               sx={{
                 "&:hover": { textDecoration: "Underline", cursor: "pointer" },
@@ -165,9 +172,9 @@ export default function Footer() {
               UI/UX Services
             </ListItem>
           </List>
-        </Box>
-      </Box>
-      <Box
+        </BoxComponent>
+      </BoxComponent>
+      <BoxComponent
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
@@ -176,34 +183,22 @@ export default function Footer() {
         textAlign={{ xs: "center" }}
         padding={"8px"}
       >
-        <Typography variant="body1" color={"white"} fontWeight={"500"}>
+        <TypographyComponent variant="body1" color={"white"} fontWeight={"500"}  fontFamily='var(--main)'>
           Copyright © 2024 JJs. All Rights Reserved by{" "}
-          <Typography
+          <TypographyComponent
             component="span"
             variant="body1"
             sx={{
               fontWeight: "500",
               cursor: "pointer",
               textDecoration: "2px Underline",
+               fontFamily:'var(--main)'
             }}
           >
             JJs IT
-          </Typography>
-        </Typography>
-        {/* <List sx={{ display: "flex" }}>
-          <ListItem>
-            <FacebookOutlinedIcon sx={{ color: "white", cursor: "pointer" }} />
-          </ListItem>
-          <ListItem>
-            <EmailOutlinedIcon sx={{ color: "white", cursor: "pointer" }} />
-          </ListItem>
-          <ListItem>
-            <SubscriptionsOutlinedIcon
-              sx={{ color: "white", cursor: "pointer" }}
-            />{" "}
-          </ListItem>
-        </List> */}
-      </Box>
-    </Box>
+          </TypographyComponent>
+        </TypographyComponent>
+      </BoxComponent>
+    </BoxComponent>
   );
 }
