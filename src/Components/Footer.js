@@ -7,7 +7,10 @@ import { useNavigate } from "react-router-dom";
 import BoxComponent from "./Box";
 import TypographyComponent from "./Typography";
 import ButtonComponent from "./Button";
+import ListComponent from './List';
+import { FormatLineSpacing } from "@mui/icons-material";
 export default function Footer() {
+  const items = ['Home', 'Services', 'Mobile App Development', 'Web App Development', 'UI/UX Services'];
   const navigate = useNavigate();
   return (
     <BoxComponent sx={{ backgroundColor: "#004cb2" }}>
@@ -134,44 +137,22 @@ export default function Footer() {
           alignItems={"left"}
           justifyContent={"space-around"}
         >
-          <List sx={{ color: "white", fontWeight: "500" }}>
-            <TypographyComponent variant="h5"  fontFamily='var(--basic)'>Quick Links</TypographyComponent>
-            <ListItem
-              sx={{
-                "&:hover": { textDecoration: "Underline", cursor: "pointer" },
-              }}
-            >
-              Home
-            </ListItem>
-            <ListItem
-              sx={{
-                "&:hover": { textDecoration: "Underline", cursor: "pointer" },
-              }}
-            >
-              Services
-            </ListItem>
-            <ListItem
-              sx={{
-                "&:hover": { textDecoration: "Underline", cursor: "pointer" },
-              }}
-            >
-              Mobile App Development
-            </ListItem>
-            <ListItem
-              sx={{
-                "&:hover": { textDecoration: "Underline", cursor: "pointer" },
-              }}
-            >
-              Web Application Development
-            </ListItem>
-            <ListItem
-              sx={{
-                "&:hover": { textDecoration: "Underline", cursor: "pointer" },
-              }}
-            >
-              UI/UX Services
-            </ListItem>
-          </List>
+          <BoxComponent>
+            <TypographyComponent
+            fontFamily={'var(--basic)'}
+            fontWeight={'700'}
+            fontSize={{xs:'14px',md:'22px'}}
+            color={'var(--light)'}
+            >Quick Links</TypographyComponent>
+          <ListComponent
+          sx={{
+            color:'var(--light)',
+            fontFamily:'var(--main)',
+            fontWeight:'400',
+            fontSize:{xs:'14px',md:'17px'}
+          }}
+          items={items} />
+          </BoxComponent>
         </BoxComponent>
       </BoxComponent>
       <BoxComponent

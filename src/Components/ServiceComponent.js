@@ -15,10 +15,9 @@ export default function ServiceComponent(props) {
         sx={{
           fontSize: { xs: "1.1rem", md: "1.25rem" },
           color: "var(--dull)",
-          fontFamily:'var(--main)',
+          fontFamily:'var(--basic)',
           fontWeight: "bold",
           marginTop: "20px",
-          fontFamily: "var(--basic)",
           letterSpacing: "0px",
         }}
       >
