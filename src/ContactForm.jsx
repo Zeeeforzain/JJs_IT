@@ -26,7 +26,7 @@ export default function ContactForm() {
         flexDirection: { xs: 'column',sm:'column', md: 'row' },
         justifyContent: {xs:'center',md:'space-around', xl:'space-around'},
         alignItems: {xs:'center', md:'center', xl:'start'},
-        padding:{xs:'0px 10px', md:'0px 50px', xl:"20px 22% 20px 21%" },
+        padding:{xs:'0px 10px', md:'20px 20px 10px 0px', xl:"20px 24% 20px 22%" },
         height:'auto',   
       }}
       >
