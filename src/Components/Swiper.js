@@ -63,6 +63,7 @@ const Swiper = () => {
         position: "relative",
         width: {xs:'100%', md:'95%', xl:'60%'},
         margin:'auto',
+        height:'auto',
         marginTop:{xs:'10px', md:'15px', xl:'50px'},
         overflow: "hidden",
        
@@ -90,7 +91,7 @@ const Swiper = () => {
               justifyContent: "center",
               flexDirection: "column",
               textAlign: "left",
-              padding: "50px",
+              padding: "60px",
             }}
           >
             <TypographyComponent
@@ -143,12 +144,35 @@ const Swiper = () => {
           </BoxComponent>
         ))}
       </BoxComponent>
-
+      <BoxComponent
+        sx={{
+          position: "absolute",
+          bottom: {xs:"30px", md:'60px'},
+          left: "50%",
+          transform: "translateX(-50%)",
+          display: "flex",
+          gap: "8px",
+        }}
+      >
+        {slides.map((_, index) => (
+          <BoxComponent
+            key={index}
+            sx={{
+              width: "30px",
+              height: "3px",
+              backgroundColor:
+                currentSlide === index ? "white" : "rgba(255, 255, 255, 0.3)",
+              cursor: "pointer",
+            }}
+            onClick={() => setCurrentSlide(index)}
+          />
+        ))}
+      </BoxComponent>
       <IconButton
         onClick={handlePrev}
         sx={{
           position: "absolute",
-          top: {xs:'90%',md:"85%"},
+          top: {xs:'95%',md:"89%"},
           left: {xs:'20px',md:"120px"},
           transform: "translateY(-50%)",
           color: "white",
@@ -162,7 +186,7 @@ const Swiper = () => {
         onClick={handleNext}
         sx={{
           position: "absolute",
-          top: {xs:'90%',md:"85%"},
+          top: {xs:'95%',md:"89%"},
           right: {xs:'20px',md:"120px"},
           transform: "translateY(-50%)",
           color: "white",
@@ -173,31 +197,7 @@ const Swiper = () => {
         <ArrowForwardIosIcon />
       </IconButton>
 
-      <BoxComponent
-        sx={{
-          position: "absolute",
-          bottom: "20px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          display: "flex",
-          gap: "8px",
-        }}
-      >
-        {slides.map((_, index) => (
-          <BoxComponent
-            key={index}
-            sx={{
-              width: "30px",
-              height: "2px",
-              backgroundColor:
-                currentSlide === index ? "white" : "rgba(255, 255, 255, 0.3)",
-              cursor: "pointer",
-            }}
-            onClick={() => setCurrentSlide(index)}
-          />
-        ))}
       </BoxComponent>
-    </BoxComponent>
   );
 };
 

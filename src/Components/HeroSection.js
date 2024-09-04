@@ -11,7 +11,7 @@ export default function HeroSection() {
       className="box"
       width={{ xs: "80%", md: "60%", xl:'40%' }}
       height={{ xs: "auto", md: "80vh" }}
-      margin={{ xs: "5px 20px 20px 15px", md: "20px 20% 10px 70px", xl:"20px 45% 10px 23%" }}
+      margin={{ xs: "5px 20px 20px 15px", md: "5px 20% 10px 70px", xl:"20px 45% 10px 23%" }}
     >
       <TypographyComponent
         variant="h2"
@@ -52,10 +52,11 @@ export default function HeroSection() {
             textTransform: "none",
             fontFamily:'var(--main)',
             padding: "10px 20px",
-            borderRadius: "5px",
+            borderRadius: "8px",
             width: "140px",
             height: "7vh",
             marginBottom:'15px',
+            marginTop:'10px',
             justifyContent: "space-around",
             transition: "width 0.3s ease-out, height 0.3s ease-out",
             "&:hover": {

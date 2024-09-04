@@ -20,7 +20,7 @@ export default function Footer() {
         justifyContent={{ xs: "left", md: "space-between" }}
         alignItems={{xs:'left',md:"center",lg:'center', xl:'center'}}
         height={{ xs: "auto", md: "30vh" }}
-        padding={{ xs: "5px", md: "50px 80px", xl:"20px 23% 20px 23%" }}
+        padding={{ xs: "5px", md: "50px 70px", xl:"20px 23% 20px 23%" }}
         borderBottom={"1px solid white"}
       >
         <TypographyComponent
@@ -72,7 +72,7 @@ export default function Footer() {
         alignItems={"start"}
         justifyContent={"space-between"}
         borderBottom={"1px solid white"}
-        padding={{ xs: "5px", md: "20px 80px", xl:"80px 23% 5px 23%" }}
+        padding={{ xs: "5px", md: "20px 70px", xl:"80px 23% 5px 23%" }}
         flexDirection={{ xs: "column", md: "row" }}
       >
         <BoxComponent

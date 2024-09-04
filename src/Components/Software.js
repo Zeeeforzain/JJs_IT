@@ -12,11 +12,9 @@ export default function Software(props) {
     alignItems={{xs:'center', md:'center'}}
     justifyContent={{xs:'center', md:'space-evenly'}}
     textAlign={{xs:"center",md:'center'}}
-    
-    
     sx={{
-      '&:hover':{xs:'none', md:{width:'32%', height:'22vh',cursor:'pointer', transition:'0.2s ease-out', boxShadow:"1px 2px 10px 2px #e0e0de"}}
-  }}
+      '&:hover':{cursor:'pointer'}
+    }}
     >
     <BoxComponent
   component="img"
@@ -25,14 +23,21 @@ export default function Software(props) {
   sx={{
     width: { xs: '30px', md: '60px' },
     height: { xs: '30px', md: '60px' },
-  }}
+    '&:hover':{width:{xs:'40px', md:'70px'},
+    height:{xs:'37px', md:'70px'},
+       transition:'0.2s ease-out'
+    }
+  }
+  }
 />
 
 <TypographyComponent 
   variant="body1" 
   color="#616B7E" 
   sx={{
-    fontSize: { xs: '0.5rem', md: '1.2rem' }
+    fontSize: { xs: '0.5rem', md: '1.2rem' },
+    '&:hover':{xs: '0.55rem', md: '1.25rem'},
+     transition:'0.2s ease-out',
   }}
 >
   {props.name}
