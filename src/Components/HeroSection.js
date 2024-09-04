@@ -9,9 +9,9 @@ export default function HeroSection() {
   return (
     <BoxComponent
       className="box"
-      width={{ xs: "80%", md: "60%" }}
+      width={{ xs: "80%", md: "60%", xl:'40%' }}
       height={{ xs: "auto", md: "80vh" }}
-      margin={{ xs: "5px 20px 20px 15px", md: "20px 20% 10px 70px" }}
+      margin={{ xs: "5px 20px 20px 15px", md: "20px 20% 10px 70px", xl:"20px 50% 10px 25%" }}
     >
       <TypographyComponent
         variant="h2"

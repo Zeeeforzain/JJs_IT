@@ -93,9 +93,9 @@ function Appbar(props) {
       </BoxComponent>
       <Divider />
       <List>
-        {navItems.map((item, index) => (
+        {navItems.map((item, num) => (
           <ListItem
-            key={index}
+            key={num}
             onClick={() => item.path && handleNavClick(item.path)}
             sx={{ 
               cursor: item.path ? "pointer" : "default",
@@ -115,7 +115,7 @@ function Appbar(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <BoxComponent sx={{ display: "flex", justifyContent: "start" }}>
+    <BoxComponent sx={{ display: "flex", justifyContent: "start"}}>
       <CssBaseline />
       <AppBar
         component="nav"
@@ -131,6 +131,7 @@ function Appbar(props) {
           justifyContent: "center",
           boxShadow: scrolling ? 1 : 0,
           transition: "background-color 0.5s ease, color 0.5s ease",
+           padding:{xs:'0px', sm:'0px', md:'0px', lg:'0px', xl:'0px 22%'}
         }}
       >
         <Toolbar

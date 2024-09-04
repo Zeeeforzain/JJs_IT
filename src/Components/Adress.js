@@ -6,7 +6,7 @@ import TypographyComponent from "./Typography";
 export default function Adress(props) {
   return (
     <BoxComponent
-      width={{xs:'100%',md:"24%"}}
+      width={{xs:'100%',md:"24%", xl:'25%'}}
       height={"25vh"}
       display={"flex"}
       flexDirection={"column"}

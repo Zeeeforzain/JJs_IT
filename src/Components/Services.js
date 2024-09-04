@@ -4,7 +4,8 @@ import Headings from "./Headings";
 import BoxComponent from "./Box";
 export default function Services() {
   return (
-    <BoxComponent margin={{ xs: "50px 15px", md: "40px 80px" }}>
+    <BoxComponent margin={{ xs: "50px 15px", md: "60px 80px", xl:"80px 25% 5px 25%" }}
+    >
       <Headings
         titleVariant="h3"
         descVariant="body1"

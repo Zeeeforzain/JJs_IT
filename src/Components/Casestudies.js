@@ -5,7 +5,7 @@ import TypographyComponent from "./Typography";
 
 export default function Casestudies() {
   return (
-    <BoxComponent margin={{ xs: "50px 15px", md: "30px 80px" }}>
+    <BoxComponent margin={{ xs: "50px 15px", md: "30px 80px", xl:"80px 25% 5px 25%" }}>
       <Headings
         titleVariant="h3"
         descVariant="h6"
@@ -17,8 +17,10 @@ export default function Casestudies() {
         flexDirection={{ xs: "column", md: "row" }}
         justifyContent={"space-between"}
         alignItems={"center"}
+        width={'90%'}
       >
-        <BoxComponent width={{ xs: "100%", md: "55%" }}>
+        <BoxComponent width={{ xs: "100%", md: "50%",lg:'50%', xl:'50%' }}
+        >
           <TypographyComponent
             sx={{
               marginTop:'10px',
@@ -48,14 +50,16 @@ export default function Casestudies() {
         <BoxComponent
           width={{ xs: "100%", md: "450px" }}
           height={{ xs: "auto", md: "350px" }}
-          margin={{ xs: "5px", md: "10px 100px 5px 0px" }}
+         display={'flex'}
+         justifyContent={'center'}
+         alignItems={'center'}
         >
           <BoxComponent
             component="img"
             sx={{
               margin: { xs: "10px 10px", md: "1px" },
-              width: { xs: "320px", md: "400px" },
-              height: { xs: "220", md: "320px" },
+              width: { xs: "250px",sm:'250px', md: "350px" },
+              height: { xs: "180",sm:'250px', md: "270px" },
             }}
             src="Images/mygroser2.png"
             alt=""

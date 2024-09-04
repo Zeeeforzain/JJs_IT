@@ -6,21 +6,22 @@ import Services from "./Components/Services";
 import Tools from "./Components/Tools";
 import Casestudies from "./Components/Casestudies";
 import Adress from "./Components/Adress";
-import Footer from './Components/Footer';
-import Swiper from './Components/Swiper';
+import Footer from "./Components/Footer";
+import Swiper from "./Components/Swiper";
 
 export default function Home() {
   return (
-    <Box className="home">
-     <Box
-       sx={{
-        backgroundImage: 'url(/Images/bg1.png)',
-        backgroundSize:'100% 100%', 
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition:'center',}}
-        >
-      <Appbar />
-      <HeroSection />
+    <Box>
+      <Box
+        sx={{
+          backgroundImage: "url(/Images/bg1.png)",
+          backgroundSize: "100% 100%",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
+        <Appbar />
+        <HeroSection />
       </Box>
       <Services />
       <Swiper />
@@ -29,7 +30,7 @@ export default function Home() {
       </Box>
       <Casestudies />
       <Box
-        margin={{ xs: '15px 15px', md: "30px 80px" }}
+        margin={{ xs: "15px 15px", md: "30px 80px" , xl:"60px 25% 60px 25%"}}
         display={"flex"}
         alignItems={"center"}
         justifyContent={"left"}

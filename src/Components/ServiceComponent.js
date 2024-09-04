@@ -6,8 +6,9 @@ export default function ServiceComponent(props) {
   return (
     <BoxComponent
       width={{ xs: "100%", md: "30%" }}
-      height={{ xs: "auto", md: "52vh" }}
-      marginBottom={{ xs: "10px", md: "10px" }}
+      height={'auto'}
+      marginBottom={{ xs: "10px", md: "15px", xl:'15px' }}
+  
     >
       <img src={props.img} alt="logo" />
       <TypographyComponent

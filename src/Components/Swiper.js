@@ -61,8 +61,9 @@ const Swiper = () => {
     <BoxComponent
       sx={{
         position: "relative",
-        width: "95%",
-        margin: "auto",
+        width: {xs:'100%', md:'95%', xl:'55%'},
+        margin:'auto',
+        marginTop:{xs:'10px', md:'15px', xl:'50px'},
         overflow: "hidden",
        
       }}

@@ -23,12 +23,11 @@ export default function ContactForm() {
       sx={{
         
         display: 'flex',
-        flexDirection: { xs: 'column', md: 'row' },
-        justifyContent: {xs:'center',md:'space-around'},
-        alignItems: 'center',
-        paddingTop: '50px',
-        paddingBottom: '50px',
-        height:'auto'
+        flexDirection: { xs: 'column',sm:'column', md: 'row' },
+        justifyContent: {xs:'center',md:'space-around', xl:'space-around'},
+        alignItems: {xs:'center', md:'center', xl:'start'},
+        padding:{xs:'0px 10px', md:'0px 50px', xl:"20px 22% 20px 21%" },
+        height:'auto',   
       }}
       >
         <BoxComponent
@@ -59,7 +58,7 @@ export default function ContactForm() {
       </BoxComponent>
       </BoxComponent>
       <BoxComponent 
-      margin={'40px 60px '}
+      margin={{xs:'40px 60px', md:'40 px 60px' , xl:"60px 25% 60px 25%"}}
       >
       <Adress
       title="Islamabad, Pakistan"

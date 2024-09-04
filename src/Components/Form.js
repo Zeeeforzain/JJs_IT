@@ -7,11 +7,12 @@ import ButtonComponent from "./Button";
 export default function Form() {
   return (
     <BoxComponent
-      width={{ xs: "90%", md: "35%" }}
+      width={{ xs: "90%",sm:'50%', md: "35%" }}
       height={"auto"}
       backgroundColor={"white"}
       borderRadius={"10px"}
       padding={"15px"}
+      marginBottom={'25px'}
     >
       <Headings
         titleVariant="h5"
