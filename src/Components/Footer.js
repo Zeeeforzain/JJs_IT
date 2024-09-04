@@ -1,4 +1,4 @@
-import {List, ListItem } from "@mui/material";
+
 import Title from "./Title";
 import React from "react";
 import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
@@ -8,7 +8,7 @@ import BoxComponent from "./Box";
 import TypographyComponent from "./Typography";
 import ButtonComponent from "./Button";
 import ListComponent from './List';
-import { FormatLineSpacing } from "@mui/icons-material";
+
 export default function Footer() {
   const items = ['Home', 'Services', 'Mobile App Development', 'Web App Development', 'UI/UX Services'];
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ export default function Footer() {
         justifyContent={{ xs: "left", md: "space-between" }}
         alignItems={{xs:'left',md:"center",lg:'center', xl:'center'}}
         height={{ xs: "auto", md: "30vh" }}
-        padding={{ xs: "5px", md: "50px 80px", xl:"20px 25% 20px 25%" }}
+        padding={{ xs: "5px", md: "50px 80px", xl:"20px 23% 20px 23%" }}
         borderBottom={"1px solid white"}
       >
         <TypographyComponent
@@ -72,7 +72,7 @@ export default function Footer() {
         alignItems={"start"}
         justifyContent={"space-between"}
         borderBottom={"1px solid white"}
-        padding={{ xs: "5px", md: "20px 80px", xl:"80px 25% 5px 25%" }}
+        padding={{ xs: "5px", md: "20px 80px", xl:"80px 23% 5px 23%" }}
         flexDirection={{ xs: "column", md: "row" }}
       >
         <BoxComponent
@@ -143,6 +143,7 @@ export default function Footer() {
             fontWeight={'700'}
             fontSize={{xs:'14px',md:'22px'}}
             color={'var(--light)'}
+            marginTop={{xs:'10px', md:'0px'}}
             >Quick Links</TypographyComponent>
           <ListComponent
           sx={{

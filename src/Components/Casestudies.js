@@ -5,7 +5,7 @@ import TypographyComponent from "./Typography";
 
 export default function Casestudies() {
   return (
-    <BoxComponent margin={{ xs: "50px 15px", md: "30px 80px", xl:"80px 25% 5px 25%" }}>
+    <BoxComponent margin={{ xs: "50px 15px", md: "30px 80px", xl:"80px 23% 5px 23%" }}>
       <Headings
         titleVariant="h3"
         descVariant="h6"

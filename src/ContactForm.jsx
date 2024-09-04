@@ -26,14 +26,14 @@ export default function ContactForm() {
         flexDirection: { xs: 'column',sm:'column', md: 'row' },
         justifyContent: {xs:'center',md:'space-around', xl:'space-around'},
         alignItems: {xs:'center', md:'center', xl:'start'},
-        padding:{xs:'0px 10px', md:'20px 20px 10px 0px', xl:"20px 24% 20px 22%" },
+        padding:{xs:'0px 10px', md:'20px 20px 10px 0px', xl:"20px 21% 20px 19%" },
         height:'auto',   
       }}
       >
         <BoxComponent
           className="box"
           overflow={'hidden'}
-          width={{ xs: "80%", md: "40%" }}
+          width={{ xs: "95%", md: "40%" }}
           height={{xs:'30vh', md:'70vh'}}
         >
           <TypographyComponent
@@ -58,7 +58,7 @@ export default function ContactForm() {
       </BoxComponent>
       </BoxComponent>
       <BoxComponent 
-      margin={{xs:'40px 60px', md:'40 px 60px' , xl:"60px 25% 60px 25%"}}
+      margin={{xs:'40px 60px', md:'40 px 60px' , xl:"60px 23% 60px 23%"}}
       >
       <Adress
       title="Islamabad, Pakistan"
