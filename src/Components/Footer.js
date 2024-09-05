@@ -51,11 +51,11 @@ export default function Footer() {
             fontFamily:'var(--main)',
             margin: "10px 20px",
             borderRadius: "10px",
-            fontSize: "15px",
+            fontSize: {xs:'10px',md:"15px", xl:'15px'},
             color:"var(--dark)",
             transition: "width 0.4s ease-out, height 0.4s ease-out", 
             "&:hover": {
-              width: {xs:'180px',md:"210px", xl:"210px"},
+              width: {xs:'170px',md:"210px", xl:"210px"},
               height: {xs:'7vh', md:"11vh", xl:"11vh"},
             },
           }}

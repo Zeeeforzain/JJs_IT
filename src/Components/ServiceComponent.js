@@ -7,7 +7,7 @@ export default function ServiceComponent(props) {
     <BoxComponent
       width={{ xs: "100%", md: "30%" }}
       height={'auto'}
-      marginBottom={{ xs: "10px", md: "15px", xl:'15px' }}
+      marginBottom={{ xs: "30px", md: "15px", xl:'15px' }}
   
     >
 
