@@ -94,7 +94,6 @@ export default function Footer() {
             width={"100%"}
             margin={"10px 20px 10px 20px"}
             color={"white"}
-            fontWeight={"500"}
              fontFamily='var(--main)'
           >
             JJs IT offers full-stack mobile and development services
@@ -113,7 +112,7 @@ export default function Footer() {
               width={"30px"}
               height={"auto"}
             />
-            <TypographyComponent variant="body1" marginLeft={"10px"} fontWeight={"500"}  fontFamily='var(--main)'>
+            <TypographyComponent variant="body1" marginLeft={"10px"}   fontFamily='var(--main)'>
               +92 345 5276648
             </TypographyComponent>
           </BoxComponent>
@@ -126,7 +125,7 @@ export default function Footer() {
             color={"white"}
           >
             <LocationOnOutlinedIcon fontSize="medium" sx={{ color: "white" }} />
-            <TypographyComponent variant="body1" marginLeft={"10px"} fontWeight={"500"}  fontFamily='var(--main)'>
+            <TypographyComponent variant="body1" marginLeft={"10px"} fontFamily='var(--main)'>
               Floor 3, Office No. 6, G-11/4 Islamabad, Pakistan
             </TypographyComponent>
           </BoxComponent>
