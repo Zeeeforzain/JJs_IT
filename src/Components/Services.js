@@ -21,17 +21,17 @@ export default function Services() {
         alignItems="start"
       >
         <ServiceComponent
-          img="Images/App.svg"
+          img="Images/mobile.png"
           title="Mobile App Development"
           description="Get in touch with us to create your own on-demand app, just like Uber, Uber Eats, Scoot, and more. We specialize in developing high-quality on-demand startup apps tailored to meet your specific needs."
         />
         <ServiceComponent
-          img="Images/Web.svg"
+          img="Images/web.png"
           title="Web Development Services"
           description="From bespoke web development to content management solutions, JJs IT provides top-tier web development services, including headless CMS optimized for every search engine.'"
         />
         <ServiceComponent
-          img="Images/UX.svg"
+          img="Images/Ux.png"
           title="UI/UX Services"
           description="Looking for a straightforward yet impactful experience? JJs IT is here to offer you exceptional product ideation and design services, all with a top-notch UX approach. Reach out to us today and enjoy the finest web and app development experience."
         />
@@ -44,12 +44,12 @@ export default function Services() {
         alignItems="start"
       >
         <ServiceComponent
-          img="Images/API.svg"
+          img="Images/api.png"
           title="API Integration Services"
           description="JJs IT specializes in API integration and automation services, ensuring seamless connectivity between your websites, CRM, and accounting tools."
         />
         <ServiceComponent
-          img="Images/computer.svg"
+          img="Images/sqa.png"
           title="Software Quality Assurance"
           description="Offering comprehensive software quality assurance services, I ensure that your software products meet the highest standards of reliability and performance. Through meticulous testing and analysis, I identify and address issues early, delivering a seamless and bug-free user experience."
         />

@@ -8,10 +8,12 @@ import BoxComponent from "./Box";
 import TypographyComponent from "./Typography";
 import ButtonComponent from "./Button";
 import ListComponent from './List';
+import { useMediaQuery } from '@mui/material';
 
 export default function Footer() {
   const items = ['Home', 'Services', 'Mobile App Development', 'Web App Development', 'UI/UX Services'];
   const navigate = useNavigate();
+  const isMobile = useMediaQuery('(max-width:600px)');
   return (
     <BoxComponent sx={{ backgroundColor: "#004cb2" }}>
       <BoxComponent
@@ -43,8 +45,8 @@ export default function Footer() {
           variant="contained"
           color="var(--light)"
           sx={{
-            width: { xs: "50%", md: "auto" },
-            height:'auto',
+            width: {xs:'160px',md:"200px", xl:'200px'},
+            height: {xs:'7vh',md:"10vh", xl:'10vh'},
             textTransform: "none",
             fontFamily:'var(--main)',
             margin: "10px 20px",
@@ -53,16 +55,16 @@ export default function Footer() {
             color:"var(--dark)",
             transition: "width 0.4s ease-out, height 0.4s ease-out", 
             "&:hover": {
-              width: "180px",
-              height: "7vh",
+              width: {xs:'160px',md:"210px", xl:"210px"},
+              height: {xs:'7vh', md:"11vh", xl:"11vh"},
             },
           }}
         >
           Let's Get Started{" "}
           <ArrowRightRoundedIcon
-            xs={{
-              fontSize: { xs: "small", md: "large" },
-            }}
+            sx={{
+            fontSize:{ xs: "medium", md: "large", xl:'large'}}}
+          
           />
         </ButtonComponent>
       </BoxComponent>
@@ -144,6 +146,7 @@ export default function Footer() {
             fontSize={{xs:'14px',md:'22px'}}
             color={'var(--light)'}
             marginTop={{xs:'10px', md:'0px'}}
+            marginLeft='14px'
             >Quick Links</TypographyComponent>
           <ListComponent
           sx={{
@@ -165,8 +168,10 @@ export default function Footer() {
         textAlign={{ xs: "center" }}
         padding={"8px"}
       >
-        <TypographyComponent variant="body1" color={"white"} fontWeight={"500"}  fontFamily='var(--main)'>
-          Copyright © 2024 JJs. All Rights Reserved by{" "}
+        <TypographyComponent variant="body1" color={"white"} fontWeight={"500"}  fontFamily='var(--main)'
+        fontSize={{xs:'14px', md:'16px', xl:'20px'}}
+        >
+          Copyright © 2024 JJs. {isMobile && <br />}  All Rights Reserved by{" "}
           <TypographyComponent
             component="span"
             variant="body1"

@@ -10,7 +10,20 @@ export default function ServiceComponent(props) {
       marginBottom={{ xs: "10px", md: "15px", xl:'15px' }}
   
     >
-      <img src={props.img} alt="logo" />
+
+<BoxComponent
+  sx={{
+    width: { xs: '40px', md: '60px', xl: '70px' },
+    height: { xs: '40px', md: '60px', xl: '70px' }
+  }}
+>
+  <img
+    style={{ width: '100%', height: '100%' }} // Let the image fill the container
+    src={props.img}
+    alt="logo"
+  />
+</BoxComponent>
+
       <TypographyComponent
         variant="h6"
         sx={{

@@ -5,14 +5,16 @@ import Software from "./Software";
 import BoxComponent from "./Box";
 
 export default function Tools() {
-  const [activeTech, setActiveTech] = useState(null);
+
+  const defaultTech = "Mobile App Development"; 
+  const [activeTech, setActiveTech] = useState(defaultTech);
 
   const handleTechClick = (techName) => {
     setActiveTech(techName);
   };
 
   return (
-    <BoxComponent margin={{ xs: "50px 15px", md: "60px 70px", xl:"80px 23% 5px 23%" }}>
+    <BoxComponent margin={{ xs: "50px 15px", md: "60px 70px", xl: "80px 23% 5px 23%" }}>
       <Headings
         titleVariant="h3"
         descVariant="h6"
@@ -70,7 +72,7 @@ export default function Tools() {
           display={"flex"}
           flexDirection={{ xs: "row", md: "row" }}
           justifyContent={{ xs: "space-between", md: "space-around" }}
-          alignItems={{xs:"start", md:"start"}}
+          alignItems={{ xs: "start", md: "start" }}
           width={{ xs: "70%", md: "50%" }}
         >
           {activeTech === "Mobile App Development" && (

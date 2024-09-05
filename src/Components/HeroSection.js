@@ -11,14 +11,14 @@ export default function HeroSection() {
       className="box"
       width={{ xs: "80%", md: "60%", xl:'40%' }}
       height={{ xs: "auto", md: "80vh" }}
-      margin={{ xs: "5px 20px 20px 15px", md: "5px 20% 10px 70px", xl:"20px 45% 10px 23%" }}
+      margin={{ xs: "5px 20px 20px 15px", md: "5px 20% 0px 70px", xl:"20px 45% 10px 23%" }}
     >
       <TypographyComponent
         variant="h2"
         sx={{
           fontWeight: "700",
           color: "var(--light)",
-          fontSize: { xs: "1.75rem", md: "3.75rem" },
+          fontSize: { xs: "1.75rem", md: "3.1rem" },
           fontFamily:'var(--main)'
 
 
@@ -32,15 +32,15 @@ export default function HeroSection() {
         sx={{
           color: "var(--light)",
            fontFamily:'var(--main)',
-          marginTop: {xs:'10px', md:'20px'},
-          marginBottom: "20px",
+          marginTop: {xs:'10px', md:'10px'},
+          marginBottom: "15px",
           fontSize: { xs: "0.9rem", md: "1.25rem" },
         }}
       >
         Company focused on crafting business solutions that optimize and elevate
         business operations.
       </TypographyComponent>
-      <BoxComponent width={"150px"} height={"8vh"}>
+      <BoxComponent width={"150px"} height={"15vh"}>
         {" "}
         <ButtonComponent
           onClick={() => {
@@ -54,9 +54,7 @@ export default function HeroSection() {
             padding: "10px 20px",
             borderRadius: "8px",
             width: "140px",
-            height: "7vh",
-            marginBottom:'15px',
-            marginTop:'10px',
+            height: "8vh",
             justifyContent: "space-around",
             transition: "width 0.3s ease-out, height 0.3s ease-out",
             "&:hover": {
