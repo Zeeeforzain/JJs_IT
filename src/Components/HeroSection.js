@@ -54,7 +54,7 @@ export default function HeroSection() {
             padding: "10px 20px",
             borderRadius: "8px",
             width: "140px",
-            height: "8vh",
+            height: {xs:'5vh',md:"8vh", xl:'8vh'},
             justifyContent: "space-around",
             transition: "width 0.3s ease-out, height 0.3s ease-out",
             "&:hover": {

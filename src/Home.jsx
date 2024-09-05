@@ -1,6 +1,5 @@
 import React from "react";
 import Appbar from "./Components/Appbar";
-import Box from "@mui/material/Box";
 import HeroSection from "./Components/HeroSection";
 import Services from "./Components/Services";
 import Tools from "./Components/Tools";
@@ -8,11 +7,12 @@ import Casestudies from "./Components/Casestudies";
 import Adress from "./Components/Adress";
 import Footer from "./Components/Footer";
 import Swiper from "./Components/Swiper";
+import BoxComponent from "./Components/Box";
 
 export default function Home() {
   return (
-    <Box>
-      <Box
+    <BoxComponent>
+      <BoxComponent
         sx={{
           backgroundImage: "url(/Images/bg1.png)",
           backgroundSize: "100% 100%",
@@ -22,14 +22,16 @@ export default function Home() {
       >
         <Appbar />
         <HeroSection />
-      </Box>
+      </BoxComponent>
+      <BoxComponent id="services">
       <Services />
+      </BoxComponent>
       <Swiper />
-      <Box id="tools">
+      <BoxComponent id="tools">
         <Tools />
-      </Box>
+      </BoxComponent>
       <Casestudies />
-      <Box
+      <BoxComponent
         margin={{ xs: "15px 15px", md: "30px 70px" , xl:"60px 23% 60px 23%"}}
         display={"flex"}
         alignItems={"center"}
@@ -40,8 +42,8 @@ export default function Home() {
           address="Floor 3, Office No. 6, G-11/4 Islamabad, Pakistan"
           email="spreadknowledge93@gmail.com"
         />
-      </Box>
+      </BoxComponent>
       <Footer />
-    </Box>
+    </BoxComponent>
   );
 }

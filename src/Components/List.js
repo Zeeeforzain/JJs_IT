@@ -8,7 +8,7 @@ export default function ListComponent(props) {
       {props.items.map((item, index) => (
         <MUIListItem key={index}
         sx={{ '&:hover':{
-          textDecoration:'underline',
+          textDecoration:'underline white',
           cursor:'pointer'
         }}}
         >

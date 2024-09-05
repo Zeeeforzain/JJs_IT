@@ -25,12 +25,14 @@ export default function Tools() {
         display={"flex"}
         justifyContent={"space-between"}
         width={{ xs: "100%", md: "80%" }}
-      >
+    
+        >
         <BoxComponent
           width={{ xs: "60%", md: "40%" }}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"left"}
+ 
         >
           <Tech
             name="Mobile App Development"

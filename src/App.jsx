@@ -2,7 +2,6 @@ import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home.jsx';
 import ContactForm from './ContactForm.jsx';
-
 function App() {
   return (
     <HashRouter>
