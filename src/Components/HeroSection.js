@@ -59,7 +59,7 @@ export default function HeroSection() {
             transition: "width 0.3s ease-out, height 0.3s ease-out",
             "&:hover": {
               width: "150px",
-              height: "8vh",
+              height: "9vh",
             },
           }}
         >

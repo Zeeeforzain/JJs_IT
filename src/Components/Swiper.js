@@ -91,7 +91,7 @@ const Swiper = () => {
               justifyContent: "center",
               flexDirection: "column",
               textAlign: "left",
-              padding: {xs:'60px 60px 60px 30px',md:"60px 60px 60px 45px"},
+              padding: {xs:'60px 60px 60px 15px',md:"60px 60px 60px 45px"},
             }}
           >
             <TypographyComponent
