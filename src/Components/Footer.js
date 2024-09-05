@@ -45,7 +45,7 @@ export default function Footer() {
           variant="contained"
           color="var(--light)"
           sx={{
-            width: {xs:'180px',md:"200px", xl:'200px'},
+            width: {xs:'170px',md:"200px", xl:'200px'},
             height: {xs:'5vh',md:"10vh", xl:'10vh'},
             textTransform: "none",
             fontFamily:'var(--main)',
