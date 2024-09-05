@@ -18,11 +18,11 @@ export default function Adress(props) {
         {props.title}
       </TypographyComponent  >
       <BoxComponent display={"flex"} alignItems={"center"}>
-        <FmdGoodOutlinedIcon fontSize="small" color="primary" />
-        <TypographyComponent variant="caption" marginLeft={'5px'}>{props.address}</TypographyComponent>
+        <FmdGoodOutlinedIcon fontSize="small" sx={{color:'var(--primary)'}} />
+        <TypographyComponent variant="caption"sx={{fontFamily:'var(--main)'}} marginLeft={'5px'}>{props.address}</TypographyComponent>
       </BoxComponent>
       <BoxComponent display={"flex"} alignItems={"center"}>
-        <MarkunreadOutlinedIcon fontSize="small" color="primary" />
+        <MarkunreadOutlinedIcon fontSize="small" sx={{color:'var(--primary)'}} />
         <TypographyComponent variant="caption" marginLeft={'5px'}sx={{fontFamily:'var(--main)'}} >{props.email}</TypographyComponent>
       </BoxComponent>
     </BoxComponent>

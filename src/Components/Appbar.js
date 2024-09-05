@@ -39,7 +39,7 @@ const navItems = [
         transition: "width 0.3s ease-out, height 0.3s ease-out", 
         "&:hover": {
           width: "145px",
-          height: "9vh",
+          height: "8.5vh",
         },
       }}
     >

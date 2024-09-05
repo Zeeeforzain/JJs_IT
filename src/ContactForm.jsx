@@ -62,8 +62,8 @@ export default function ContactForm() {
       >
       <Adress
       title="Islamabad, Pakistan"
-      address="G11/4, Islamabad,Pakistan"
-      email="jjit@gmail.com"
+      address="Floor 3, Office No. 6, G-11/4 Islamabad, Pakistan"
+      email="spreadknowledge93@gmail.com"
       />
       </BoxComponent>
       <Footer/>

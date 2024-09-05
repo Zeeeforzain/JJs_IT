@@ -15,7 +15,7 @@ export default function Footer() {
   const navigate = useNavigate();
   const isMobile = useMediaQuery('(max-width:600px)');
   return (
-    <BoxComponent sx={{ backgroundColor: "#004cb2" }}>
+    <BoxComponent sx={{ backgroundColor: "var(--primary)" }}>
       <BoxComponent
         display={"flex"}
         flexDirection={{ xs: "column", md: "row" }}
