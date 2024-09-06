@@ -10,7 +10,7 @@ export default function Headings(props) {
       <TypographyComponent
         variant={props.titleVariant}
         sx={{
-          fontSize: { xs: "1.5rem", md: "42px" },
+          fontSize: { xs: "1.5rem", md: "42px", xl:'49px' },
           fontWeight: "700",
           color: "var(--dull)",
           fontFamily:'var(--main)',
@@ -23,7 +23,7 @@ export default function Headings(props) {
         sx={{ 
           marginTop:'5px',
           fontFamily:'var(--main)',
-          fontSize: { xs: "0.9rem", md: "17px" }, color: "#616B7E", fontWeight:'400' }}
+          fontSize: { xs: "0.9rem", md: "17px", xl:'20px' }, color: "#616B7E", fontWeight:'400' }}
       >
         {props.description}
       </TypographyComponent>

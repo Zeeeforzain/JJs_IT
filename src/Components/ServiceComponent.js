@@ -27,7 +27,7 @@ export default function ServiceComponent(props) {
       <TypographyComponent
         variant="h6"
         sx={{
-          fontSize: { xs: "1.1rem", md: "1.25rem" },
+          fontSize: { xs: "1.1rem", md: "1.25rem", xl:'23px' },
           color: "var(--dull)",
           fontFamily:'var(--basic)',
           fontWeight: "bold",
@@ -40,7 +40,7 @@ export default function ServiceComponent(props) {
       <TypographyComponent
         variant="subtitle1"
         sx={{
-          fontSize: { xs: "0.95rem", md: "1.05rem" },
+          fontSize: { xs: "0.95rem", md: "1.05rem", xl:'20px' },
           fontFamily:'var(--main)',
           color: "var(--paragraph)",
         }}

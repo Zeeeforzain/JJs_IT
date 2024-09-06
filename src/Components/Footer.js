@@ -19,9 +19,9 @@ export default function Footer() {
     { label: "UI/UX Services", path: "/#services" },
   ];
 
-  // const items = ['Home', 'Services', 'Mobile App Development', 'Web App Development', 'UI/UX Services'];
+  
   const navigate = useNavigate();
-  const isMobile = useMediaQuery("(max-width:600px)");
+  const xs = useMediaQuery("(max-width:600px)");
   return (
     <BoxComponent sx={{ backgroundColor: "var(--primary)" }}>
       <BoxComponent
@@ -30,13 +30,13 @@ export default function Footer() {
         justifyContent={{ xs: "left", md: "space-between" }}
         alignItems={{ xs: "left", md: "center", lg: "center", xl: "center" }}
         height={{ xs: "auto", md: "30vh" }}
-        padding={{ xs: "5px", md: "50px 70px", xl: "20px 23% 20px 23%" }}
+        padding={{ xs: "5px", md: "50px 70px", xl: "20px 5% 20px 5%" }}
         borderBottom={"1px solid white"}
       >
         <TypographyComponent
           variant="h3"
           sx={{
-            fontSize: { xs: "1.3rem", md: "2.6rem" },
+            fontSize: { xs: "1.3rem", md: "2.6rem", xl:'49px' },
             width: { xs: "70%", md: "65%" },
             fontWeight: "700",
             color: "var(--light)",
@@ -53,7 +53,7 @@ export default function Footer() {
           color="var(--light)"
           sx={{
             width: { xs: "170px", md: "200px", xl: "200px" },
-            height: { xs: "5vh", md: "10vh", xl: "10vh" },
+            height: { xs: "5vh", md: "10vh", xl: "15vh" },
             textTransform: "none",
             fontFamily: "var(--main)",
             margin: "10px 20px",
@@ -81,7 +81,7 @@ export default function Footer() {
         alignItems={"start"}
         justifyContent={"space-between"}
         borderBottom={"1px solid white"}
-        padding={{ xs: "5px", md: "20px 70px", xl: "80px 23% 5px 23%" }}
+        padding={{ xs: "5px", md: "20px 70px", xl: "80px 5% 5px 5%" }}
         flexDirection={{ xs: "column", md: "row" }}
       >
         <BoxComponent
@@ -170,7 +170,7 @@ export default function Footer() {
                   <Link
                     smooth
                     to={item.path}
-                    style={{ color: "var(--light)", textDecoration: "none",
+                    style={{ color: "var(--light)",fontFamily:'var(--main)', textDecoration: "none",
                      }}
                   >
                     {item.label}
@@ -197,15 +197,16 @@ export default function Footer() {
           fontFamily="var(--main)"
           fontSize={{ xs: "14px", md: "16px", xl: "20px" }}
         >
-          Copyright © 2024 JJs {isMobile && <br />} All Rights Reserved by{" "}
+          Copyright © 2024 JJs {xs && <br />} All Rights Reserved by{" "}
           <TypographyComponent
             component="span"
             variant="body1"
             sx={{
               fontWeight: "500",
               cursor: "pointer",
-              textDecoration: "2px Underline",
+              textDecoration: "1px Underline",
               fontFamily: "var(--main)",
+              fontSize:{ xs: "14px", md: "16px", xl: "20px" }
             }}
           >
             JJs IT

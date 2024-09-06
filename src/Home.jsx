@@ -32,7 +32,7 @@ export default function Home() {
       </BoxComponent>
       <Casestudies />
       <BoxComponent
-        margin={{ xs: "15px 15px", md: "30px 70px" , xl:"60px 23% 60px 23%"}}
+        margin={{ xs: "15px 15px", md: "30px 70px" , xl:"60px 5% 60px 5%"}}
         display={"flex"}
         alignItems={"center"}
         justifyContent={"left"}

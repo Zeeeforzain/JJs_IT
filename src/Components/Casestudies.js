@@ -5,7 +5,7 @@ import TypographyComponent from "./Typography";
 
 export default function Casestudies() {
   return (
-    <BoxComponent margin={{ xs: "50px 15px", md: "30px 70px", xl:"80px 23% 5px 23%" }}>
+    <BoxComponent margin={{ xs: "50px 15px", md: "30px 70px", xl:"80px 5% 5px 5%" }}>
       <Headings
         titleVariant="h3"
         descVariant="h6"
@@ -24,7 +24,7 @@ export default function Casestudies() {
           <TypographyComponent
             sx={{
               marginTop:'10px',
-              fontSize: { xs: "27px", md: "1.25rem" },
+              fontSize: { xs: "27px", md: "1.25rem", xl:'23px' },
               fontWeight: "700",
               color: "var(--dull)",
               fontFamily:'var(--basic)',
@@ -34,7 +34,7 @@ export default function Casestudies() {
           </TypographyComponent>
           <TypographyComponent
             sx={{
-              fontSize: { xs: "1rem", md: "1.05rem" },
+              fontSize: { xs: "1rem", md: "1.05rem", xl:'20px' },
               marginTop:'10px',
               fontFamily:'var(--main)',
               color: "var(--paragraph)",

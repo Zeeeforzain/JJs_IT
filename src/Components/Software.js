@@ -22,10 +22,10 @@ export default function Software(props) {
   src={props.img}
   alt="logo"
   sx={{
-    width: { xs: '30px', md: '80px' },
-    height: { xs: '30px', md: '80px' },
-    '&:hover':{width:{xs:'30px', md:'85px'},
-    height:{xs:'30px', md:'85px'},
+    width: { xs: '25px', md: '50px' },
+    height: { xs: '25px', md: '50px' },
+    '&:hover':{width:{xs:'25px', md:'55px'},
+    height:{xs:'25px', md:'55px'},
        transition:'0.2s ease-out'
     }
   }
@@ -34,10 +34,10 @@ export default function Software(props) {
 
 <TypographyComponent 
   variant="body1" 
-  color="#616B7E" 
+  color="var(--paragraph)" 
   sx={{
-    fontSize: { xs: '0.5rem', md: '17px' },
-    '&:hover':{xs: '0.55rem', md: '18px'},
+    fontSize: { xs: '0.5rem', md: '17px', xl:'20px' },
+    '&:hover':{xs: '0.55rem', md: '18px', xl:'22px'},
      transition:'0.2s ease-out',
   }}
 >

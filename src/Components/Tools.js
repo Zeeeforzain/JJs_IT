@@ -14,7 +14,7 @@ export default function Tools() {
   };
 
   return (
-    <BoxComponent margin={{ xs: "50px 15px", md: "60px 70px", xl: "80px 23% 5px 23%" }}>
+    <BoxComponent margin={{ xs: "50px 15px", md: "60px 70px", xl: "80px 5% 5px 5%" }}>
       <Headings
         titleVariant="h3"
         descVariant="h6"

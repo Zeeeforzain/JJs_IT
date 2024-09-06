@@ -61,7 +61,7 @@ const Swiper = () => {
     <BoxComponent
       sx={{
         position: "relative",
-        width: {xs:'100%', md:'95%', xl:'60%'},
+        width: {xs:'100%', md:'95%', xl:'100%'},
         margin:'auto',
         height:'auto',
         marginTop:{xs:'10px', md:'15px', xl:'50px'},
@@ -91,7 +91,7 @@ const Swiper = () => {
               justifyContent: "center",
               flexDirection: "column",
               textAlign: "left",
-              padding: {xs:'60px 60px 60px 15px',md:"60px 60px 60px 45px"},
+              padding: {xs:'60px 60px 60px 15px',md:"60px 60px 60px 45px", xl:'60px 60px 60px 65px'},
             }}
           >
             <TypographyComponent

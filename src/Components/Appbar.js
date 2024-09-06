@@ -131,7 +131,7 @@ function Appbar(props) {
           justifyContent: "center",
           boxShadow: scrolling ? 1 : 0,
           transition: "background-color 0.5s ease, color 0.5s ease",
-           padding:{xs:'0px', sm:'0px', md:'0px', lg:'0px', xl:'0px 25% 0px 20%'}
+           padding:{xs:'0px', sm:'0px', md:'0px', lg:'0px', xl:'0px 20px 0px 0px'}
         }}
       >
         <Toolbar

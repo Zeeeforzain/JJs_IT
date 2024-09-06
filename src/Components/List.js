@@ -1,6 +1,6 @@
 import React from 'react';
 import { List as MUIList, ListItem as MUIListItem } from '@mui/material';
-import TypographyComponent from './Typography';
+
 
 export default function ListComponent(props) {
   return (
