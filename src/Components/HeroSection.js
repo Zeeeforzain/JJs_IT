@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <BoxComponent
       className="box"
-      width={{ xs: "80%", md: "50%", xl:'60%' }}
+      width={{ xs: "80%", md: "65%", xl:'60%' }}
       height={{ xs: "auto", md: "80vh" }}
       margin={{ xs: "5px 20px 20px 15px", md: "5px 20% 0px 70px", xl:"20px 0px 10px 5%" }}
     >
@@ -18,7 +18,7 @@ export default function HeroSection() {
         sx={{
           fontWeight: "700",
           color: "var(--light)",
-          fontSize: { xs: "1.75rem", md: "3.1rem", xl:'70px' },
+          fontSize: { xs: "1.75rem", md: "60px", xl:'70px' },
           fontFamily:'var(--main)'
 
 
