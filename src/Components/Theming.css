@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Eudoxus+Sans:wght@400;700&family=Inter:wght@400;700&display=swap');
 
 :root {
@@ -12,6 +11,15 @@
     --light: #f8f9fa;
     --dark:#343a40;
     --dull:#000;
-    --main: "Eudoxus Sans";
-    --basic:'Inter, sans-serif';
-  }
+    --main: 'Eudoxus Sans', sans-serif; 
+    --basic: 'Inter', sans-serif;       
+}
+
+
+.font-main {
+    font-family: var(--main); 
+}
+
+.font-basic {
+    font-family: var(--basic); 
+}
