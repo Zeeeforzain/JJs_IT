@@ -21,6 +21,7 @@ export default function ServiceComponent(props) {
     style={{ width: '100%', height: '100%' }} // Let the image fill the container
     src={props.img}
     alt="logo"
+
   />
 </BoxComponent>
 

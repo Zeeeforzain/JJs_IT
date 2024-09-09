@@ -53,7 +53,7 @@ export default function Footer() {
           color="var(--light)"
           sx={{
             width: { xs: "170px", md: "200px", xl: "200px" },
-            height: { xs: "5vh", md: "10vh", xl: "15vh" },
+            height: { xs: "5vh", md: "10vh", xl: "9vh" },
             textTransform: "none",
             fontFamily: "var(--main)",
             margin: "10px 20px",

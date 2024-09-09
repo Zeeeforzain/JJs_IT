@@ -32,14 +32,14 @@ const navItems = [
       sx={{
         textTransform: "none",
          fontFamily:'var(--main)',
-        padding: '10px 20px',
+        padding: '10px 5px',
         borderRadius:'8px',
-        width: '140px', 
-        height: '8vh', 
+        width: {xs:'140px', md:'140px', xl:'200px'}, 
+        height: {xs:'7vh', md:'7vh',xl:'7vh'}, 
         transition: "width 0.3s ease-out, height 0.3s ease-out", 
         "&:hover": {
-          width: "145px",
-          height: "8.5vh",
+          width: {xs:'140px', md:"145px", xl:'205px'},
+          height: {xs:'7vh', md:"7.5vh", xl:'7.5vh'},
         },
       }}
     >
@@ -131,7 +131,7 @@ function Appbar(props) {
           justifyContent: "center",
           boxShadow: scrolling ? 1 : 0,
           transition: "background-color 0.5s ease, color 0.5s ease",
-           padding:{xs:'0px', sm:'0px', md:'0px', lg:'0px', xl:'0px 20px 0px 0px'}
+           padding:{xs:'0px', sm:'0px', md:'0px', lg:'0px', xl:'0px 150px 0px 0px'}
         }}
       >
         <Toolbar

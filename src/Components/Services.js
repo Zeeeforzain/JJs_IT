@@ -44,7 +44,7 @@ export default function Services() {
         alignItems="start"
       >
         <ServiceComponent
-          img="Images/api.png"
+          img="Images/API.png"
           title="API Integration Services"
           description="JJs IT specializes in API integration and automation services, ensuring seamless connectivity between your websites, CRM, and accounting tools."
         />

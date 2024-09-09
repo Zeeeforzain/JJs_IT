@@ -17,18 +17,18 @@ export default function Form() {
 
   const [status, setStatus] = useState('');
 
-  // Handle input change
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handle form submission
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/contact-us/contact', formData);
+      const response = await axios.post('https://jjs-landing-page-backend.vercel.app/contact', formData);
       if (response.status === 200) {
         setStatus('Message sent successfully!');
       } else {
