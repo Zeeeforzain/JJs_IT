@@ -52,8 +52,8 @@ export default function Footer() {
           variant="contained"
           color="var(--light)"
           sx={{
-            width: { xs: "170px", md: "200px", xl: "180px" },
-            height: { xs: "5vh", md: "10vh", xl: "10vh" },
+            width: { xs: "170px", md: "180px", xl: "180px" },
+            height: { xs: "5vh", md: "10vh", xl: "11vh" },
             textTransform: "none",
             fontFamily: "var(--main)",
             margin: "10px 20px",
@@ -63,7 +63,7 @@ export default function Footer() {
             transition: "width 0.4s ease-out, height 0.4s ease-out",
             "&:hover": {
               width: { xs: "180px", md: "210px", xl: "190px" },
-              height: { xs: "5vh", md: "11vh", xl: "11vh" },
+              height: { xs: "5vh", md: "11vh", xl: "12vh" },
             },
           }}
         >

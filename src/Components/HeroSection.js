@@ -52,12 +52,12 @@ export default function HeroSection() {
             marginTop:'10px',
             borderRadius: "8px",
             width: {xs:"140px", md:'140px', xl:'170px'},
-            height: {xs:'5vh',md:"8vh", xl:'8vh' },
+            height: {xs:'5vh',md:"8vh", xl:'9vh' },
             justifyContent: "space-around",
             transition: "width 0.3s ease-out, height 0.3s ease-out",
             "&:hover": {
               width: {xs:'140px',md:"150px", xl:'180px'},
-              height: {xs:"5vh", md:'9vh', xl:'9vh'},
+              height: {xs:"5vh", md:'9vh', xl:'10vh'},
             },
           }}
         >
