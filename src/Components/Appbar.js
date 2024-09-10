@@ -34,12 +34,12 @@ const navItems = [
          fontFamily:'var(--main)',
         padding: '10px 5px',
         borderRadius:'8px',
-        width: {xs:'140px', md:'140px', xl:'200px'}, 
-        height: {xs:'7vh', md:'7vh',xl:'7vh'}, 
+        width: {xs:'140px', md:'130px', xl:'150px'}, 
+        height: {xs:'7vh', md:'7vh',xl:'8vh'}, 
         transition: "width 0.3s ease-out, height 0.3s ease-out", 
         "&:hover": {
-          width: {xs:'140px', md:"145px", xl:'205px'},
-          height: {xs:'7vh', md:"7.5vh", xl:'7.5vh'},
+          width: {xs:'140px', md:"135px", xl:'155px'},
+          height: {xs:'7vh', md:"7.5vh", xl:'8.5vh'},
         },
       }}
     >

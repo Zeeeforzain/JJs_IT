@@ -20,9 +20,6 @@ export default function HeroSection() {
           color: "var(--light)",
           fontSize: { xs: "1.75rem", md: "60px", xl:'70px' },
           fontFamily:'var(--main)'
-
-
-
         }}
       >
         Transforming Mobile and Web Application Development Services
@@ -54,12 +51,12 @@ export default function HeroSection() {
             padding: "10px 20px",
             marginTop:'10px',
             borderRadius: "8px",
-            width: {xs:"140px", md:'140px', xl:'200px'},
+            width: {xs:"140px", md:'140px', xl:'170px'},
             height: {xs:'5vh',md:"8vh", xl:'8vh' },
             justifyContent: "space-around",
             transition: "width 0.3s ease-out, height 0.3s ease-out",
             "&:hover": {
-              width: {xs:'140px',md:"150px", xl:'210px'},
+              width: {xs:'140px',md:"150px", xl:'180px'},
               height: {xs:"5vh", md:'9vh', xl:'9vh'},
             },
           }}
