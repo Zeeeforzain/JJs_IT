@@ -11,7 +11,7 @@ export default function ServiceComponent(props) {
       sx={{
         transition: 'transform 0.3s ease-out', 
         "&:hover": {
-          transform: 'scale(1.1)',
+          transform: {xs:'none',md:'scale(1.1)'},
           cursor:'pointer'  
         }
       }}
