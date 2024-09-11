@@ -64,9 +64,8 @@ export default function Footer() {
          "&:hover": {
           transform: {xs:'none',md:'scale(1.1)'},
           cursor:'pointer',
-          transition:'0.5s ease-out'
-        }
-          }}
+          transition:{xs:'none', md:'0.5s ease-out'}
+          }}}
         >
           Let's Get Started{" "}
           <ArrowRightRoundedIcon
