@@ -59,9 +59,10 @@ export default function HeroSection() {
             justifyContent: "space-around",
             transition: "width 0.3s ease-out, height 0.3s ease-out",
             "&:hover": {
-              width: {xs:'140px',sm:'140px',md:"150px",lg:'160px', xl:'180px'},
-              height: {xs:"5vh",sm:'5vh', md:'7vh',lg:'8vh', xl:'8vh'},
-            },
+              transform: 'scale(1.1)',
+              cursor:'pointer',
+              transition:'0.5s ease-out'
+            }
           }}
         >
           {" "}

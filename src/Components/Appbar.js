@@ -38,9 +38,10 @@ const navItems = [
         height: {xs:'5vh', md:'6vh',lg:'7vh',xl:'7vh'}, 
         transition: "width 0.3s ease-out, height 0.3s ease-out", 
         "&:hover": {
-          width: {xs:'100px', md:"125px",lg:'135px', xl:'165px'},
-          height: {xs:'5vh', md:"6.5vh",lg:'7.5vh', xl:'7.5vh'},
-        },
+          transform: 'scale(1.1)',
+          cursor:'pointer',
+          transition:'0.5s ease-out'
+        }
       }}
     >
       Contact Us

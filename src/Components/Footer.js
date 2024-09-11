@@ -61,10 +61,11 @@ export default function Footer() {
             fontSize: { xs: "15px", md: "15px", xl: "15px" },
             color: "var(--dark)",
             transition: "width 0.4s ease-out, height 0.4s ease-out",
-            "&:hover": {
-              width: { xs: "180px", md: "190px", xl: "190px" },
-              height: { xs: "4vh", md: "9.5vh", xl: "6.5vh" },
-            }
+         "&:hover": {
+          transform: 'scale(1.1)',
+          cursor:'pointer',
+          transition:'0.5s ease-out'
+        }
           }}
         >
           Let's Get Started{" "}

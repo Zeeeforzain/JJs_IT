@@ -14,7 +14,11 @@ export default function Software(props) {
 
     textAlign={{xs:"center",md:'center'}}
     sx={{
-      '&:hover':{cursor:'pointer'}
+      "&:hover": {
+      transform: 'scale(1.1)',
+      cursor:'pointer',
+      transition:'0.3s ease-out'
+    }
     }}
     >
     <BoxComponent
@@ -24,10 +28,7 @@ export default function Software(props) {
   sx={{
     width: { xs: '25px', md: '50px' },
     height: { xs: '25px', md: '50px' },
-    '&:hover':{width:{xs:'25px', md:'55px'},
-    height:{xs:'25px', md:'55px'},
-       transition:'0.2s ease-out'
-    }
+    
   }
   }
 />
