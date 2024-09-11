@@ -62,7 +62,7 @@ export default function Footer() {
             color: "var(--dark)",
             transition: "width 0.4s ease-out, height 0.4s ease-out",
          "&:hover": {
-          transform: 'scale(1.1)',
+          transform: {xs:'none',md:'scale(1.1)'},
           cursor:'pointer',
           transition:'0.5s ease-out'
         }
