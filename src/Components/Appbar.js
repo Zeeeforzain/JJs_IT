@@ -138,7 +138,7 @@ function Appbar(props) {
         <Toolbar
           sx={{
             justifyContent: "space-between",
-            flexDirection: { xs: "row-reverse", md: "row" },
+            flexDirection: { xs: "row-reverse", sm:'row', md: "row" },
           }}
         >
           <IconButton
