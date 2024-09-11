@@ -23,8 +23,8 @@ const navItems = [
     label: (
       <BoxComponent
       sx={{
-        height:'8vh',
-        width:'140px'
+        height:{xs:'auto', sm:'5vh', md:'6.5vh', lg:'7.5vh', xl:'7.5vh'},
+        width:{xs:'auto', sm:'100px', md:'125px', lg:'135px', xl:'165px'}
       }}>
       <ButtonComponent
       variant="contained"
@@ -34,12 +34,12 @@ const navItems = [
          fontFamily:'var(--main)',
         padding: '10px 5px',
         borderRadius:'8px',
-        width: {xs:'140px', md:'120px',lg:'130px', xl:'160px'}, 
-        height: {xs:'3.5vh', md:'6vh',lg:'7vh',xl:'7vh'}, 
+        width: {xs:'100px', md:'120px',lg:'130px', xl:'160px'}, 
+        height: {xs:'5vh', md:'6vh',lg:'7vh',xl:'7vh'}, 
         transition: "width 0.3s ease-out, height 0.3s ease-out", 
         "&:hover": {
-          width: {xs:'140px', md:"125px",lg:'135px', xl:'165px'},
-          height: {xs:'3.5vh', md:"6.5vh",lg:'7.5vh', xl:'7.5vh'},
+          width: {xs:'100px', md:"125px",lg:'135px', xl:'165px'},
+          height: {xs:'5vh', md:"6.5vh",lg:'7.5vh', xl:'7.5vh'},
         },
       }}
     >
@@ -99,7 +99,7 @@ function Appbar(props) {
             onClick={() => item.path && handleNavClick(item.path)}
             sx={{ 
               cursor: item.path ? "pointer" : "default",
-              justifyContent: "center",
+              justifyContent: "left",
               textAlign: "center",
               width: "100%" ,
               fontFamily:'var(--main)',

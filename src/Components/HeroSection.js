@@ -37,7 +37,10 @@ export default function HeroSection() {
         Company focused on crafting business solutions that optimize and elevate
         business operations.
       </TypographyComponent>
-      <BoxComponent width={"150px"} height={"15vh"}>
+      <BoxComponent 
+      sx={{ height:{xs:'8vh', sm:'8vh', md:'7vh', lg:'8vh', xl:'8vh'},
+      width:{xs:'auto', sm:'100px', md:'150px', lg:'160px', xl:'180px'}}}
+      >
         {" "}
         <ButtonComponent
           onClick={() => {
@@ -52,12 +55,12 @@ export default function HeroSection() {
             marginTop:'10px',
             borderRadius: "8px",
             width: {xs:"140px", md:'140px',lg:'150px', xl:'170px'},
-            height: {xs:'3.5vh',md:"6vh",lg:'7vh', xl:'7vh' },
+            height: {xs:'5vh',md:"6vh",lg:'7vh', xl:'7vh' },
             justifyContent: "space-around",
             transition: "width 0.3s ease-out, height 0.3s ease-out",
             "&:hover": {
-              width: {xs:'140px',md:"150px",lg:'160px', xl:'180px'},
-              height: {xs:"3.5vh", md:'7vh',lg:'8vh', xl:'8vh'},
+              width: {xs:'140px',sm:'140px',md:"150px",lg:'160px', xl:'180px'},
+              height: {xs:"5vh",sm:'5vh', md:'7vh',lg:'8vh', xl:'8vh'},
             },
           }}
         >
