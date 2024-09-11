@@ -34,12 +34,12 @@ const navItems = [
          fontFamily:'var(--main)',
         padding: '10px 5px',
         borderRadius:'8px',
-        width: {xs:'140px', md:'130px', xl:'150px'}, 
-        height: {xs:'3.5vh', md:'7vh',xl:'3.5vh'}, 
+        width: {xs:'140px', md:'120px',lg:'130px', xl:'160px'}, 
+        height: {xs:'3.5vh', md:'7.5vh',lg:'7vh',xl:'7vh'}, 
         transition: "width 0.3s ease-out, height 0.3s ease-out", 
         "&:hover": {
-          width: {xs:'140px', md:"135px", xl:'155px'},
-          height: {xs:'3.5vh', md:"7.5vh", xl:'4vh'},
+          width: {xs:'140px', md:"125px",lg:'135px', xl:'165px'},
+          height: {xs:'3.5vh', md:"8vh",lg:'8vh', xl:'7.5vh'},
         },
       }}
     >
@@ -115,7 +115,7 @@ function Appbar(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <BoxComponent sx={{ display: "flex", justifyContent: "start"}}>
+    <BoxComponent sx={{ display: "flex", justifyContent: "center", alignItems:'center'}}>
       <CssBaseline />
       <AppBar
         component="nav"
@@ -170,7 +170,7 @@ function Appbar(props) {
                   fontSize:'15px',
                   fontWeight: "500",
                   textTransform:'none',
-                   fontFamily:'var(--main)'
+                   fontFamily:'var(--main)',
                 }}
               >
                 {item.label}

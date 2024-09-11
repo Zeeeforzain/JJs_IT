@@ -51,13 +51,13 @@ export default function HeroSection() {
             padding: "10px 20px",
             marginTop:'10px',
             borderRadius: "8px",
-            width: {xs:"140px", md:'140px', xl:'170px'},
-            height: {xs:'3.5vh',md:"7vh", xl:'4.5vh' },
+            width: {xs:"140px", md:'140px',lg:'150px', xl:'170px'},
+            height: {xs:'3.5vh',md:"6vh",lg:'7vh', xl:'7vh' },
             justifyContent: "space-around",
             transition: "width 0.3s ease-out, height 0.3s ease-out",
             "&:hover": {
-              width: {xs:'140px',md:"150px", xl:'180px'},
-              height: {xs:"3.5vh", md:'8vh', xl:'5vh'},
+              width: {xs:'140px',md:"150px",lg:'160px', xl:'180px'},
+              height: {xs:"3.5vh", md:'7vh',lg:'8vh', xl:'8vh'},
             },
           }}
         >
