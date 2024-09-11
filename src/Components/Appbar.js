@@ -35,11 +35,11 @@ const navItems = [
         padding: '10px 5px',
         borderRadius:'8px',
         width: {xs:'140px', md:'120px',lg:'130px', xl:'160px'}, 
-        height: {xs:'3.5vh', md:'7.5vh',lg:'7vh',xl:'7vh'}, 
+        height: {xs:'3.5vh', md:'6vh',lg:'7vh',xl:'7vh'}, 
         transition: "width 0.3s ease-out, height 0.3s ease-out", 
         "&:hover": {
           width: {xs:'140px', md:"125px",lg:'135px', xl:'165px'},
-          height: {xs:'3.5vh', md:"8vh",lg:'8vh', xl:'7.5vh'},
+          height: {xs:'3.5vh', md:"6.5vh",lg:'7.5vh', xl:'7.5vh'},
         },
       }}
     >
